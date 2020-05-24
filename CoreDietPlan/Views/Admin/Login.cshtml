@@ -1,0 +1,64 @@
+﻿@{
+
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+    <link href="~/css/RegisterStyle.css" rel="stylesheet" />
+    <style>
+        a {
+            text-decoration: none;
+            color: lightgrey;
+        }
+
+        ::-webkit-input-placeholder {
+            text-align: center;
+            font-size: larger;
+        }
+    </style>
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- multistep form -->
+
+    <form method="post" action="Login" id="msform">
+
+
+
+        <!-- fieldsets -->
+        <fieldset>
+            <h2 class="fs-title">Log into your admin account</h2><br />
+            @ViewBag.failedLogin
+
+
+            <input class="inputs" id="username" type="text" name="userID" placeholder="Username" />
+            <input class="inputs" type="password" name="password" placeholder="Password" />
+
+
+
+            <input type="submit" name="submit" class="action-button" value="Login" />
+
+        </fieldset>
+    </form>
+    <button type="button" style="display:none;" id="toggleModal" data-backdrop="static" data-keyboard="false" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button>
+
+   
+
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/jquery.easing.min.js"></script>
+
+    <script src="~/js/RegisterJS.js"></script>
+
+
+
+
+</body>
+
+</html>

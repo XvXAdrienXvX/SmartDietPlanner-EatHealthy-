@@ -1,0 +1,27 @@
+﻿boiled potato,yes,overweight,high,low,low,low,low,negative,0
+boiled potato,yes,overweight,high,low,low,low,medium,positive,1
+boiled potato,yes,overweight,high,low,low,low,high,positive,1
+boiled potato,yes,obese,high,low,low,low,low,negative,0
+boiled potato,yes,obese,high,low,low,low,medium,positive,1
+boiled potato,yes,obese,high,low,low,low,high,positive,1
+boiled potato,yes,normal,high,low,low,low,low,negative,0
+boiled potato,yes,normal,high,low,low,low,medium,positive,1
+boiled potato,yes,normal,high,low,low,low,high,positive,1
+oatmeal,yes,overweight,high,low,low,low,low,negative,0
+oatmeal,yes,overweight,high,low,low,low,medium,positive,1
+oatmeal,yes,overweight,high,low,low,low,high,positive,1
+oatmeal,yes,obese,high,low,low,low,low,negative,0
+oatmeal,yes,obese,high,low,low,low,medium,positive,1
+oatmeal,yes,obese,high,low,low,low,high,positive,1
+oatmeal,yes,normal,high,low,low,low,low,negative,0
+oatmeal,yes,normal,high,low,low,low,medium,positive,1
+oatmeal,yes,normal,high,low,low,low,high,positive,1
+boiled egg,yes,overweight,low,medium,high,low,low,negative,0
+boiled egg,yes,overweight,low,medium,high,low,medium,positive,1
+boiled egg,yes,overweight,low,medium,high,low,high,positive,1
+boiled egg,yes,obese,low,medium,high,low,low,negative,0
+boiled egg,yes,obese,low,medium,high,low,medium,positive,1
+boiled egg,yes,obese,low,medium,high,low,high,positive,1
+boiled egg,yes,normal,low,medium,high,low,low,negative,0
+boiled egg,yes,normal,low,medium,high,low,medium,positive,1
+boiled egg,yes,normal,low,medium,high,low,high,positive,1

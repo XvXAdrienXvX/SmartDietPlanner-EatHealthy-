@@ -1,0 +1,65 @@
+﻿@{
+
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="~/css/RegisterStyle.css" rel="stylesheet" />
+    <style>
+        a {
+            text-decoration: none;
+            color: lightgrey;
+        }
+
+        ::-webkit-input-placeholder {
+            text-align: center;
+            font-size: larger;
+        }
+    </style>
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- multistep form -->
+
+    <form method="post" action="Login" id="msform">
+
+
+
+        <!-- fieldsets -->
+        <fieldset>
+            <h2 class="fs-title">Log into your account</h2><br />
+           
+                                                           <div id="err3">  @ViewBag.failedLogin</div>
+
+            <input class="inputs RestrictTxt ThirdFormInputs" id="username" type="text" name="userID" placeholder="Username" />
+            <input class="inputs ThirdFormInputs" type="password" name="password" placeholder="Password" />
+
+
+
+            <input type="button" onclick="SubmitForm()" class=" action-button" value="Login" />
+            <p style="color: wheat">Don't have an account? <a href="register">Sign up</a> </p>
+            <p style="color: wheat"><a href="ForgottenPassword">Lost your password?</a></p>
+
+        </fieldset>
+    </form>
+
+   
+
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/jquery.easing.min.js"></script>
+
+    <script src="~/js/RegisterJS.js"></script>
+
+    
+
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+﻿@{
+    Layout = null;
+}
+<style>
+    .chip {
+        display: inline-block;
+        padding: 0 25px;
+        height: 50px;
+        font-size: 14px;
+        line-height: 50px;
+        border-radius: 25px;
+        background-color: #008CBA;
+        margin-right: 12px;
+        margin-bottom: 12px;
+        color:white;
+    }
+
+ 
+    .closebtn {
+        padding-left: 10px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+        .closebtn:hover {
+            color: #000;
+        }
+</style>
+
+<form enctype="multipart/form-data">
+
+    <div class="modal-header">
+
+        <h4 class="modal-title">Add Food</h4>
+        <button type="button" class="close" id="toggleActModal" onclick="stopLoad()" data-dismiss="modal">&times;</button>
+
+    </div>
+    <div class="modal-body">
+        <div class="container-fluid">
+
+
+            <div class="row">
+
+                <div class="col-md-6"><h2 style="color: #2196F3;">Please choose Food</h2></div>
+
+                <div class="col-md-12">
+                    <div class="dropdown-container" style="color:black;width: 100%;">
+                        <div class="dropdown-button noselect">
+                            <div class="dropdown-label">Food</div>
+                            <div class="dropdown-quantity">(<span id="Quan" class="quantity">None</span>)</div>
+                            <i class="fa fa-filter"></i>
+                        </div>
+                        <div class="dropdown-list" style="display: none;background:white;">
+                            <input type="search" style="width:100%;" placeholder="Search Food" class="dropdown-search" />
+                            <ul class="FoodList"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="col-lg-12" id="EmptyFieldErr" style="color: red">
+            </p>
+            <div class="row" id="FoodFields">
+
+            </div>
+            <div style=" margin-left: 4px;" class="row " id="ChipRow">
+                
+            </div>
+
+            <br>
+        </div>
+
+    </div>
+
+    <div class="modal-footer col-lg-12">
+        <input type="button" class="AddFood" onclick="SetFood()" value="Submit" />
+    </div>
+</form>
+<script src="~/js/ModelJS.js"></script>
+<script>
+    loaded();
+    var spin = document.getElementById("spinner");
+    spin.innerHTML = "";
+
+</script>

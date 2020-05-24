@@ -1,0 +1,82 @@
+﻿@model CoreDietPlan.Models.FoodDb
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<style>
+    .form-group {
+        padding-right: 3%;
+    }
+
+    #EnterBtn {
+        border: 2px solid royalblue;
+        color: royalblue;
+    }
+
+        #EnterBtn:hover {
+            color: white;
+            background-color: royalblue;
+            transition: ease-in;
+            transition-delay: 0.1s;
+        }
+</style>
+<h2>Add food to database</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <form asp-action="Create" class="form-inline">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                @*<div class="form-group">
+                        <label asp-for="ID" class="control-label"></label>
+                        <input asp-for="ID" class="form-control" />
+                        <span asp-validation-for="ID" class="text-danger"></span>
+                    </div>*@
+                <div class="form-group">
+                    @*<label asp-for="servqty" class="control-label"></label>*@
+                    <input asp-for="ServingQty" id="qty" min="1" max="50" class="form-control" />
+                    <span asp-validation-for="ServingQty" class="text-danger"></span>
+                </div>
+                <div class="form-group" id="serving">
+                    @*<label asp-for="serv" class="control-label"></label>*@
+                    <select asp-for="Serving" class="form-control">
+                        <option selected disabled>Serving</option>
+                        <option value="gram">Gram</option>
+                        <option value="ounces">Ounces</option>
+                        <option value="cup">Cup</option>
+                    </select>
+                    <span asp-validation-for="Serving" class="text-danger"></span>
+                </div>
+                <div class="form-group" id="fgroup">
+                    @*<label asp-for="group" class="control-label"></label>*@
+                    <select asp-for="Fgroup" class="form-control">
+                        <option selected disabled>Food Group</option>
+                        <option value="Dairy">Dairy</option>
+                        <option value="Protein">Protein</option>
+                        <option value="Fruit">Fruit</option>
+                        <option value="Vegetable">Vegetable</option>
+                        <option value="Grain">Grain</option>
+                        <option value="Fat">Fat</option>
+                        <option value="Legume">Legume</option>
+                    </select>
+                    <span asp-validation-for="Fgroup" class="text-danger"></span>
+                </div>
+                <div class="form-group" id="foodEnter">
+                    @*<label asp-for="food" class="control-label"></label>*@
+                    <input asp-for="Food" placeholder="Enter food..." class="form-control" />
+                    <span asp-validation-for="Food" class="text-danger"></span>
+                </div>
+                <div class="form-group" id="Enter">
+                    <input type="submit" value="Enter" id="EnterBtn" class="btn btn-default" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+@*<div>
+        <a asp-action="Index">Back to List</a>
+    </div>*@
+
+

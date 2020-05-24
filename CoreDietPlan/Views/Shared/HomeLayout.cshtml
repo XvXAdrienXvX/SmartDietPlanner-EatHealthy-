@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        .NavOpt {
+            font-family: 'Open Sans';
+            font-size:15px;
+            font-weight: 700;
+            color: beige;
+        }
+
+        .NavOpt:hover {
+            transform: scale(1.5);
+        }
+
+        #NavTitle:hover {
+            transform: scale(1.1); 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand text-uppercase" href="#"><img src="~/Images/901d0f032b5f42f08939d337cea8e1c0_p_400.png" style="height:80%; cursor:pointer ;width:auto;position:absolute;margin-left: 5%; left:0;top:5%;" />
+                <p id="NavTitle" style=" font-family: 'Open Sans';font-size:20px;font-weight: 900;color: white;">EatHealthy</p></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right" style="position: absolute; right: 0; margin-right: 5%">
+                    <li><a href="#"><p class="NavOpt">About</p></a></li>
+                    <li><a href="#"><p class="NavOpt">Features</p></a></li>
+                    @if (ViewBag.logged == "False")
+                    {
+                        <li><a onclick="location.href='@Url.Action("Login","User")'"><p class="NavOpt">Login</p></a></li>
+                        <li><a onclick="location.href='@Url.Action("Register","User")'"><p class="NavOpt">Signup</p></a></li>
+
+                    }
+                    else
+                    {
+
+                        <li><a href="#" onclick="location.href='@Url.Action("Signout","User")'"><p class="NavOpt">Sign out</p></a></li>
+
+                    }
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+        @RenderBody()
+       
+   
+
+    @*@Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")*@
+    @RenderSection("scripts", required: false)
+</body>
+</html>

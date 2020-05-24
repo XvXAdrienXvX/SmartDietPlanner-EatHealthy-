@@ -1,0 +1,127 @@
+﻿@model IEnumerable<CoreDietPlan.Models.DietUsers>
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <link href="~/css/datatables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+<body>
+    <br />
+    <p>
+        <a asp-action="Create">Create New User</a>
+    </p>
+    <table id="myTable" class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.UserName) <i class="fas fa-sort"></i>
+
+                </th>
+                <th>
+                    User Full Name <i class="fas fa-sort"></i>
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UserLastName) <i class="fas fa-sort"></i>
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.UserEmail) <i class="fas fa-sort"></i>
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UserGender) <i class="fas fa-sort"></i>
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Status) <i class="fas fa-sort"></i>
+                </th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserFirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserLastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserEmail)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserGender)
+                </td>
+                <td>
+                    @if (item.Status == "Active")
+                    {
+
+                        <text> <i class="fas fa-circle" style="color: greenyellow"></i> Active </text>
+                    }
+                    else
+                    {
+                        <text> <i class="fas fa-circle" style="color: red"></i> Suspended </text>
+
+                    }
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.UserName">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.UserName">Details</a> |
+                    @if (item.Status == "Active")
+                    {
+
+                        <a asp-action="Suspend" asp-route-id="@item.UserName">Suspend</a>
+                    }
+                    else
+                    {
+                        <a asp-action="Suspend" asp-route-id="@item.UserName">Unsuspend</a>
+
+                    }
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+    <script src="~/js/JQ.js"></script>
+    <script src="~/js/Dt.js"></script>
+    <script>
+        $.noConflict();
+
+        jQuery(document).ready(function ($) {
+            $('#myTable').DataTable({
+                "order": [[0, "asc"]],
+                "columnDefs": [
+                    {
+                        // The `data` parameter refers to the data for the cell (defined by the
+                        // `data` option, which defaults to the column being worked with, in
+                        // this case `data: 0`.
+                        "render": function (data, type, row) {
+                            return data + ' ' + row[2];
+                        },
+                        "targets": 1
+                    },
+                    { "visible": false, "targets": [2] }
+                ]
+
+
+            });
+        });
+
+
+    </script>
+</body>
+</html>

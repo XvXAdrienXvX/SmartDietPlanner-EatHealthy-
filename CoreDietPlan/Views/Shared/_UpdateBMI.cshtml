@@ -1,0 +1,119 @@
+﻿
+@{
+    Layout = null;
+}
+
+<form method="post" enctype="multipart/form-data" asp-controller="User" asp-action="UpdateBMI">
+
+    <div class="modal-header">
+        <h4 class="modal-title">Time to update your information</h4>
+
+        <button type="button" onclick="stopLoad()" class="close" data-dismiss="modal">&times;</button>
+    </div>
+    <div class="modal-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <p>    Preferred metric for weight </p><br />
+                    <div style="align-content: space-between">
+                        <label class="radio-inline">
+                            <input id="kg" type="radio" name="WeightMetric" value="kg" checked><a> Kg</a>
+                        </label>
+
+                        <label class="radio-inline">
+                            <input id="Pounds" type="radio" name="WeightMetric" value="Pounds"><a> Pounds</a>
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label"> Enter Current Weight</label>
+                        <input name="weight" class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p> Preferred metric for Height </p>
+
+                    <div style="align-content: space-between">
+                        <label class="radio-inline">
+                            <input id="Meters" type="radio" onchange="changeMetric()" name="HeightMetric" value="Meters" checked><a>Meters</a>
+                        </label>
+
+                        <label class="radio-inline">
+                            <input id="Feet" type="radio" onchange="changeMetric()" name="HeightMetric" value="Feet"><a>Inches</a>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-6" id="divMeter" style="display:block">
+                    <div class="form-group">
+                        <label class="control-label"> Enter Current Height (m)</label>
+                        <input name="heightMeter" class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6" id="divFeet" style="display:none">
+                    <div class="form-group">
+                        <label class="control-label"> Enter Current Height (feet)</label>
+                        <input name="heightFeet" class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row" >
+               <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label"> Enter current waist Circumference (cm)</label>
+                        <input name="waist" class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6" id="divInches" style="display:none">
+                    <div class="form-group">
+                        <label class="control-label"> Enter Current Height (inches)</label>
+                        <input name="heightInches" class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+
+
+            </div>
+
+     
+        </div>
+    </div>
+    <div class="modal-footer">
+        <input type="submit" class="AddFood" value="Submit" />
+    </div>
+</form>
+
+<script>
+    var spin = document.getElementById("spinner");
+    spin.innerHTML = "";
+    function changeMetric() {
+
+        var meter = document.getElementById("Meters");
+
+        if (meter.checked == false) {
+            $("#divMeter").css("display", "none");
+
+            $("#divFeet").css("display", "block");
+            $("#divInches").css("display", "block");
+        }
+        else {
+            $("#divMeter").css("display", "block");
+
+            $("#divFeet").css("display", "none");
+            $("#divInches").css("display", "none");
+
+        }
+    }
+</script>

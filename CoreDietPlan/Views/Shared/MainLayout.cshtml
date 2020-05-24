@@ -1,0 +1,77 @@
+﻿@using Microsoft.AspNetCore.Http;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        .NavOpt {
+            font-family: 'Open Sans';
+            font-size: 15px;
+            font-weight: 700;
+            color: beige;
+        }
+
+            .NavOpt:hover {
+                transform: scale(1.5);
+            }
+
+        #NavTitle:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="~/Images/EatHealthy.png" onclick="location.href='@Url.Action("index", "User")'" style="height:80%; cursor:pointer ;width:auto;position:absolute;margin-left:-3.7%;top:2%;" />
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+
+                    @if (Context.Session.GetString("LoggedIn") == null)
+
+                    {
+                        //if user isnt sign in show these buttons
+                        <li><a style="cursor: pointer" onclick="location.href='@Url.Action("Login", "User")'"><p class="NavOpt">Login</p></a></li>
+                        <li><a style="cursor: pointer" onclick="location.href='@Url.Action("Register", "User")'"><p class="NavOpt">Signup</p></a></li>
+
+                    }
+                    else
+                    {
+                        //if signed in
+                        <li><a href = "#" onclick="location.href='@Url.Action("Dashboard", "User")'" ><p class="NavOpt">Dashboard</p></a></li>
+
+                        <li><a href="#" onclick="location.href='@Url.Action("Signout", "User")'"><p class="NavOpt">Sign out</p></a></li>
+
+                    }
+
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    @RenderBody()
+
+
+
+    @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")*@
+    @RenderSection("scripts", required: false)
+</body>
+</html>

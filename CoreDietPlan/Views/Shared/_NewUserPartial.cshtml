@@ -1,0 +1,134 @@
+﻿@{
+    Layout = null;
+}
+
+
+    <div class="modal-header">
+
+        <h4 class="modal-title">Additional Data</h4>
+        @*<button type="button" class="close" data-dismiss="modal">&times;</button>*@
+
+    </div>
+    <div class="modal-body">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="wrapper">
+                        <img src="~/images/NoSetProfile.png" alt="" class="image--cover" id="Prev" />
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 style="color: #2196F3;">Set a profile picture</h3>
+                </div>
+                <div class="col-md-2">
+
+                    <input type="file" id="up" name="files" onchange="previewFile()" disabled><br>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12"><h3 style="color: #2196F3;">How would you rate your activy level through the day: </h3></div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-2">
+                    <input type="radio" class="ActivityLev" id="sedentary" name="ActivityLevel" value="sedentary" checked>
+                    <label for="sedentary">Sedentary</label>
+                </div>
+                <div class="col-md-3" style="width: 20%;">
+                    <input type="radio" class="ActivityLev" id="light" name="ActivityLevel" value="lightly">
+                    <label for="light">Lightly active</label>
+                </div>
+                <div class="col-md-2">
+                    <input type="radio" class="ActivityLev" id="mild" name="ActivityLevel" value="mild">
+                    <label for="mild">Mild active</label>
+                </div>  <div class="col-md-2">
+                    <input type="radio" class="ActivityLev" id="very" name="ActivityLevel" value="very">
+                    <label for="very">Very active</label>
+                </div>  <div class="col-md-3">
+                    <input type="radio" class="ActivityLev" id="extra" name="ActivityLevel" value="extra">
+                    <label for="extra">Extra active</label>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-md-6"><h2 style="color: #2196F3;">Vegetarian</h2></div>
+                <div class="col-md-2" style="padding-top: 1%;">
+                    <label class="switch">
+                        <input id="VegCheck" type="checkbox">
+                        <span class="slider"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6"><h2 style="color: #2196F3;">Do you have any allergies?</h2></div>
+                <div class="col-md-2" style="padding-top: 1%;">
+                    <label class="switch">
+                        <input id="AllergiesCheck" type="checkbox" onchange="AllergyChange()">
+                        <span class="slider"></span>
+                </div>
+
+            </div>
+            <br>
+            <div class="row">
+
+                <div class="col-md-6"><h2 style="color: #2196F3;">Please select allergies</h2></div>
+
+                <div class="col-md-6">
+                    <div class="dropdown-container">
+                        <div class="dropdown-button noselect" id="Dropallergies">
+                            <div class="dropdown-label">Allergies</div>
+                            <div class="dropdown-quantity">(<span class="quantity">Any</span>)</div>
+                            <i class="fa fa-filter"></i>
+                        </div>
+                        <div class="dropdown-list" id="AllergiesLists" style="display: none;">
+                            <input type="search" placeholder="Search Food" class="dropdown-search" />
+                            <ul class="AllergiesList"></ul> <!-- need id to populate as below and need to be added to modeljs-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+
+                <div class="col-md-6"><h2 style="color: #2196F3;">Please select preferences</h2></div>
+
+                <div class="col-md-6">
+                    <div class="dropdown-container">
+                        <div class="dropdown-button noselect">
+                            <div class="dropdown-label">Preferences</div>
+                            <div class="dropdown-quantity">(<span class="quantity">Any</span>)</div>
+                            <i class="fa fa-filter"></i>
+                        </div>
+                        <div class="dropdown-list" style="display: none;">
+                            <input type="search" placeholder="Search Food" class="dropdown-search" />
+                            <ul class="PreferencesList"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <input type="submit" class="AddFood" onclick="Submitting()" value="Submit" />
+    </div>
+    <script src="~/js/ModelJS.js"></script>
+    <script>
+        disableDrop();
+        var spin = document.getElementById("spinner");
+        spin.innerHTML = "";
+
+
+    </script>

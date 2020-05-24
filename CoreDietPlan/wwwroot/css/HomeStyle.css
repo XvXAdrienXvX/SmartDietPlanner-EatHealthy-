@@ -1,0 +1,31 @@
+﻿ body {
+    font-family: sans-serif;
+    height: 100%;
+    width: auto;
+    background-image: url('/images/green.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:0px 10%;
+    background-size: cover;
+}
+
+
+
+
+#header {
+    font-family: roboto slab,serif;
+    color: #fff !important;
+    font-size: 4em;
+    font-weight: 900;
+    padding: 20px;
+    padding-top: 15%;
+    border-radius: 4px;
+}
+#subHeader {
+    font-family: roboto slab,serif;
+    color: #fff !important;
+    font-size: 1.5em;
+    font-weight: 400;
+ 
+    border-radius: 4px;
+}

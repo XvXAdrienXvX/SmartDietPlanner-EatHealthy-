@@ -1,0 +1,94 @@
+﻿@model IEnumerable<CoreDietPlan.Models.AdminsTable>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Index</h1>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <link href="~/css/datatables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table id="myTable" class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AdminUsername) <i class="fas fa-sort"></i>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AdminPassword) <i class="fas fa-sort"></i>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AdminName) <i class="fas fa-sort"></i>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status) <i class="fas fa-sort"></i>
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdminUsername)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdminPassword)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdminName)
+            </td>
+            <td>
+                @if (item.Status == "Active")
+                {
+
+                    <text> <i class="fas fa-circle" style="color: greenyellow"></i> Active </text>
+                }
+                else
+                {
+                    <text> <i class="fas fa-circle" style="color: red"></i> Suspended </text>
+
+                }
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AdminUsername">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.AdminUsername">Details</a> |
+                @if (item.Status == "Active")
+                {
+
+                    <a asp-action="Suspend" asp-route-id="@item.AdminUsername">Suspend</a>
+                }
+                else
+                {
+                    <a asp-action="Suspend" asp-route-id="@item.AdminUsername">Unsuspend</a>
+
+                }
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+<script src="~/js/JQ.js"></script>
+<script src="~/js/Dt.js"></script>
+<script>
+        $.noConflict();
+
+        jQuery(document).ready(function ($) {
+            $('#myTable').DataTable({
+                "order": [[0, "asc"]]
+
+            });
+        });
+
+
+</script>

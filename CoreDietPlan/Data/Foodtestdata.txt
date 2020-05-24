@@ -1,0 +1,327 @@
+Vegetables and Vegetable Products*2.01*20.71*0.15*92*3.3*low,high,low,low,high
+Vegetables and Vegetable Products*1.37*17.72*0.14*76*2.5*low,high,low,low,high
+Vegetables and Vegetable Products*1.71*23.4*0.12*100*1.8*low,high,low,high,high
+Vegetables and Vegetable Products*0.52*34.6*0.11*142*5.1*low,high,low,high,high
+Vegetables and Vegetable Products*2.72*3.89*0.41*24*2*low,low,low,low,high
+Vegetables and Vegetable Products*0.73*3.19*0.08*14*0*low,low,low,low,low
+Vegetables and Vegetable Products*4.16*6.85*0.68*44*0*low,low,low,low,low
+Vegetables and Vegetable Products*0.95*4.01*0.11*18*0.7*low,low,low,low,low
+Vegetables and Vegetable Products*0.79*3.47*0.25*16*1.9*low,low,low,low,high
+Vegetables and Vegetable Products*0.85*3.53*0.29*17*0.4*low,low,low,low,low
+Vegetables and Vegetable Products*1.65*8.98*0.21*38*1.9*low,low,low,low,high
+Vegetables and Vegetable Products*0.71*5.06*0.08*22*2*low,low,low,low,high
+Vegetables and Vegetable Products*1.53*3.73*0.24*21*2*low,low,low,low,high
+Vegetables and Vegetable Products*1.14*4.36*0.23*20*3.5*low,low,low,low,high
+Vegetables and Vegetable Products*3.35*4.98*0.42*29*3.4*low,low,low,low,high
+Vegetables and Vegetable Products*2.99*4.74*0.38*34*3.1*low,low,low,low,high
+Vegetables and Vegetable Products*2.86*13.09*0.15*60*4.4*low,high,low,low,high
+Vegetables and Vegetable Products*0.4*2.45*0.2*11*1*low,low,low,low,high
+Vegetables and Vegetable Products*5.31*3.21*0.66*37*0*low,low,low,low,low
+Vegetables and Vegetable Products*1.49*26.99*0.14*114*3.9*low,high,low,high,high
+Nut and Seed Products*21.4*18.67*52.52*590*9.9*high,high,high,high,high
+Nut and Seed Products*20.96*21.01*52.54*598*10.9*high,high,high,high,high
+Nut and Seed Products*21.23*17.68*55.17*607*10.5*high,high,high,high,high
+Nut and Seed Products*9*47.81*27.74*458*4.8*low,high,high,high,high
+Nut and Seed Products*6.2*33.5*50*576*0*low,high,high,high,low
+Nut and Seed Products*14.32*11.74*67.1*659*7.5*high,high,high,high,high
+Nut and Seed Products*24.9*12.05*56.98*612*4.7*high,high,high,high,high
+Nut and Seed Products*15.31*32.69*46.35*574*3*high,high,high,high,high
+Nut and Seed Products*16.84*29.87*47.77*580*3.3*high,high,high,high,high
+Nut and Seed Products*18.22*30.19*43.85*553*3.3*high,high,high,high,high
+Nut and Seed Products*17.56*27.57*49.41*587*2*high,high,high,high,high
+Nut and Seed Products*4.2*49.07*1.11*224*0*low,high,low,high,low
+Nut and Seed Products*6.82*79.76*1.81*363*0*low,high,low,high,low
+Nut and Seed Products*2.88*33.64*0.76*153*0*low,high,low,high,low
+Nut and Seed Products*4.48*52.36*1.19*239*0*low,high,low,high,low
+Nut and Seed Products*2.42*45.54*2.26*213*8.1*low,high,low,high,high
+Nut and Seed Products*1.63*44.17*1.25*196*0*low,high,low,high,low
+Nut and Seed Products*6.39*77.31*4.45*374*11.7*low,high,low,high,high
+Nut and Seed Products*5.01*78.43*3.91*369*0*low,high,low,high,low
+Nut and Seed Products*2*27.76*1.38*131*0*low,high,low,high,low
+Nut and Seed Products*3.33*15.23*33.49*354*9*low,high,high,high,high
+Nut and Seed Products*6.88*23.65*64.53*660*16.3*low,high,high,high,high
+Nut and Seed Products*3.13*51.85*27.99*456*9.9*low,high,high,high,high
+Nut and Seed Products*3.35*40.91*31.69*443*4.5*low,high,high,high,high
+Nut and Seed Products*5.3*44.4*47*592*0*low,high,high,high,low
+Nut and Seed Products*3.63*6.65*34.68*330*2.2*low,low,high,high,high
+Nut and Seed Products*1.17*53.21*16.31*357*0.2*low,high,high,high,low
+Nut and Seed Products*2.29*5.54*23.84*230*2.2*low,low,high,high,high
+Nut and Seed Products*2.02*2.81*21.33*197*0*low,low,high,high,low
+Nut and Seed Products*0.72*3.71*0.2*19*1.1*low,low,low,low,high
+Nut and Seed Products*14.95*16.7*60.75*628*9.7*high,high,high,high,high
+Nut and Seed Products*13.7*17*61.15*629*11*high,high,high,high,high
+Nut and Seed Products*15.03*17.6*62.4*646*9.4*high,high,high,high,high
+Nut and Seed Products*4.32*37.6*1.68*182*0*low,high,low,high,low
+Nut and Seed Products*10.35*72.45*2*348*0*high,high,low,high,low
+Nut and Seed Products*2.29*22.1*1.62*111*9.3*low,high,low,high,high
+Nut and Seed Products*12.72*18.25*64.37*657*6.4*high,high,high,high,high
+Nut and Seed Products*7.91*13.82*75.77*718*8.6*low,high,high,high,high
+Nut and Seed Products*7.79*13.38*76.08*718*8*low,high,high,high,high
+Nut and Seed Products*19.5*22.42*53.5*607*6.4*high,high,high,high,high
+Nut and Seed Products*21.95*22.51*49.3*580*8.1*high,high,high,high,high
+Nut and Seed Products*20.04*21.05*53.95*607*7*high,high,high,high,high
+Nut and Seed Products*15.52*22.27*56.17*615*5.5*high,high,high,high,high
+Nut and Seed Products*13.82*23.68*57.7*622*5.2*high,high,high,high,high
+Nut and Seed Products*18*19.02*58.8*632*7.1*high,high,high,high,high
+Nut and Seed Products*9.17*13.86*71.97*691*9.6*low,high,high,high,high
+Nut and Seed Products*9.5*13.55*74.27*710*9.4*low,high,high,high,high
+Nut and Seed Products*9.2*13.01*75.23*715*9.5*low,high,high,high,high
+Nut and Seed Products*10.8*3.98*79.55*719*0*high,low,high,high,low
+Nut and Seed Products*13.69*13.08*68.37*673*3.7*high,high,high,high,high
+Nut and Seed Products*11.57*19.3*60.98*629*10.7*high,high,high,high,high
+Nut and Seed Products*20.16*27.17*45.32*560*10.6*high,high,high,high,high
+Nut and Seed Products*21.05*28.28*45.82*572*10.3*high,high,high,high,high
+Nut and Seed Products*24.06*9.58*59.33*619*6.8*high,low,high,high,high
+Nut and Seed Products*15.23*13.71*65.21*654*6.7*high,high,high,high,high
+Nut and Seed Products*8.28*47.59*35.71*500*3.6*low,high,high,high,high
+Nut and Seed Products*14.29*17.86*60.71*643*7.1*high,high,high,high,high
+Nut and Seed Products*6.2*40.1*2.7*207*6*low,high,low,high,high
+Nut and Seed Products*32.59*21.9*36.29*506*5.5*high,high,high,high,high
+Nut and Seed Products*18.55*53.75*19.4*446*18.4*high,high,high,high,high
+Nut and Seed Products*17*21.19*53.76*595*9.3*high,high,high,high,high
+Nut and Seed Products*3.17*52.96*2.2*245*5.1*low,high,low,high,high
+Nut and Seed Products*18.08*24.05*50.87*586*5.5*high,high,high,high,high
+Nut and Seed Products*30.78*26.62*37.1*526*0*high,high,high,high,low
+Nut and Seed Products*17.95*17.89*56.44*607*9.3*high,high,high,high,high
+Nut and Seed Products*28.33*15.31*47.37*557*0*high,high,high,high,low
+Nut and Seed Products*5.25*81.43*1.24*360*0*low,high,low,high,low
+Nut and Seed Products*1.61*5.58*20.8*202*0*low,low,high,high,low
+Nut and Seed Products*5.3*21.52*69.08*684*0*low,high,high,high,low
+Nut and Seed Products*2.88*47.67*35.49*501*4.5*low,high,high,high,high
+Nut and Seed Products*12.14*58.26*4.6*318*0*high,high,low,high,low
+Beef Products*23.07*0*2.69*117*0*high,low,low,high,low
+Beef Products*17.32*0*24.05*291*0*high,low,high,high,low
+Beef Products*17.48*0*22.55*278*0*high,low,high,high,low
+Beef Products*8.21*0*70.89*674*0*low,low,high,high,low
+Beef Products*10.65*0*70.33*680*0*high,low,high,high,low
+Beef Products*20.72*0*7.37*155*0*high,low,high,high,low
+Beef Products*19.42*0*12.73*198*0*high,low,high,high,low
+Beef Products*28.97*0*17.37*280*0*high,low,high,high,low
+Beef Products*21.22*0*8.29*165*0*high,low,high,high,low
+Beef Products*26.98*0*16.44*263*0*high,low,high,high,low
+Beef Products*27.55*0*9.31*202*0*high,low,high,high,low
+Beef Products*21.72*0*6.29*149*0*high,low,high,high,low
+Beef Products*28.02*0*13*237*0*high,low,high,high,low
+Beef Products*27.82*0*8.32*194*0*high,low,high,high,low
+Beef Products*17.51*0*22.07*274*0*high,low,high,high,low
+Beef Products*26.58*0*16.76*265*0*high,low,high,high,low
+Beef Products*20.13*0*8.3*161*0*high,low,high,high,low
+Beef Products*28.88*0*9.01*205*0*high,low,high,high,low
+Beef Products*14.4*0*36.23*388*0*high,low,high,high,low
+Beef Products*21.57*0*41.98*471*0*high,low,high,high,low
+Beef Products*19.05*0*10.19*173*0*high,low,high,high,low
+Beef Products*30.76*0*18.13*295*0*high,low,high,high,low
+Beef Products*29.21*0*7.31*191*0*high,low,high,high,low
+Beef Products*29.25*0*5.22*172*0*high,low,high,high,low
+Beef Products*32.21*0*9.24*221*0*high,low,high,high,low
+Beef Products*20.52*0*17.57*246*0*high,low,high,high,low
+Beef Products*21.75*0*3.85*128*0*high,low,low,high,low
+Beef Products*33.68*0*6.36*201*0*high,low,high,high,low
+Beef Products*22.13*0*7.39*161*0*high,low,high,high,low
+Beef Products*27.65*0*11.36*221*0*high,low,high,high,low
+Beef Products*22.1*0*7.27*160*0*high,low,high,high,low
+Beef Products*27.48*0*11.05*217*0*high,low,high,high,low
+Beef Products*21.17*0*6.57*149*0*high,low,high,high,low
+Beef Products*30.54*0*10.46*216*0*high,low,high,high,low
+Beef Products*21.13*0.31*6.07*140*0*high,low,high,high,low
+Beef Products*21.19*0.39*6.51*145*0*high,low,high,high,low
+Beef Products*23.05*0*21.83*295*0*high,low,high,high,low
+Beef Products*10.86*1.05*10.3*143*0*high,low,high,high,low
+Beef Products*12.57*0*15.83*196*0*high,low,high,high,low
+Beef Products*11.67*1.48*10.53*151*0*high,low,high,high,low
+Beef Products*17.72*0.14*3.94*112*0*high,low,low,high,low
+Beef Products*28.48*0.15*4.73*165*0*high,low,low,high,low
+Beef Products*17.4*0.29*3.09*99*0*high,low,low,low,low
+Beef Products*27.27*0*4.65*158*0*high,low,low,high,low
+Beef Products*20.36*3.89*3.63*135*0*high,low,low,high,low
+Beef Products*29.08*5.13*5.26*191*0*high,low,high,high,low
+Beef Products*26.52*5.16*4.68*175*0*high,low,low,high,low
+Beef Products*16.2*0*2.5*92*0*high,low,low,low,low
+Beef Products*20.4*0*3.7*120*0*high,low,low,high,low
+Beef Products*14.97*0*23.52*276*0*high,low,high,high,low
+Beef Products*15.7*0*18.6*235*0*high,low,high,high,low
+Beef Products*27.1*0*17.2*271*0*high,low,high,high,low
+Beef Products*18.3*0*3*105*0*high,low,low,high,low
+Beef Products*25.1*0*4.2*145*0*high,low,low,high,low
+Beef Products*1.5*0*94*854*0*low,low,high,high,low
+Beef Products*12.18*0*20.35*236*0*high,low,high,high,low
+Beef Products*21.85*0*24.98*319*0*high,low,high,high,low
+Beef Products*14.9*3.68*16.09*224*0*high,low,high,high,low
+Beef Products*19.29*0*22.3*284*0*high,low,high,high,low
+Beef Products*12.07*0*3.69*85*0*high,low,low,low,low
+Beef Products*16.5*0*27*309*0*high,low,high,high,low
+Beef Products*32.62*0*8.07*212*0*high,low,high,high,low
+Beef Products*12.5*0.7*38.8*406*0*high,low,high,high,low
+Beef Products*31.3*1.4*34.4*449*0*high,low,high,high,low
+Beef Products*14.68*0.14*14.9*198*0*high,low,high,high,low
+Beef Products*18.17*0.47*18.98*251*0*high,low,high,high,low
+Sausages and Luncheon Meats*27.1*0*14.93*250*0*high,low,high,high,low
+Beef Products*21.03*0.19*5.41*134*0*high,low,high,high,low
+Sausages and Luncheon Meats*31.1*2.76*1.94*153*0*high,low,low,high,low
+Beef Products*26.5*0.14*12.64*220*0*high,low,high,high,low
+Beef Products*26.49*0.28*13.42*228*0*high,low,high,high,low
+Sausages and Luncheon Meats*19*0*3.3*111*0*high,low,low,high,low
+Beef Products*26.53*0*11.46*209*0*high,low,high,high,low
+Sausages and Luncheon Meats*21.8*0.36*5.82*147*0*high,low,high,high,low
+Beef Products*19.42*0.49*9.99*170*0*high,low,high,high,low
+Sausages and Luncheon Meats*14.11*2.42*26.91*312*0*high,low,high,high,low
+Sausages and Luncheon Meats*20.19*1.86*4.42*133*0*high,low,low,high,low
+Beef Products*19.23*0.67*10.96*178*0*high,low,high,high,low
+Beef Products*28.4*0*12.42*230*0*high,low,high,high,low
+Beef Products*28.17*0*12.53*233*0*high,low,high,high,low
+Beef Products*28.61*0*9.18*203*0*high,low,high,high,low
+Beef Products*29.9*0*8.37*203*0*high,low,high,high,low
+Beef Products*29.51*0*8.87*206*0*high,low,high,high,low
+Beef Products*29.88*0*7.12*188*0*high,low,high,high,low
+Beef Products*26.79*0*19.52*291*0*high,low,high,high,low
+Beef Products*29.75*0*10.08*218*0*high,low,high,high,low
+Beef Products*32.9*0*8.01*213*0*high,low,high,high,low
+Beef Products*33.26*0*6.99*205*0*high,low,high,high,low
+Beef Products*23.53*0*28.5*358*0*high,low,high,high,low
+Beef Products*28.05*0*13.8*244*0*high,low,high,high,low
+Beef Products*28.94*0*19.17*297*0*high,low,high,high,low
+Beef Products*29.23*0*17.56*283*0*high,low,high,high,low
+Beef Products*33.36*0*7.67*212*0*high,low,high,high,low
+Beef Products*33.37*0*5.8*195*0*high,low,high,high,low
+Beef Products*27.18*0*24.14*334*0*high,low,high,high,low
+Beef Products*26.39*0*21.48*306*0*high,low,high,high,low
+Beef Products*27.17*0*19.02*288*0*high,low,high,high,low
+Beef Products*31.06*0*13.3*253*0*high,low,high,high,low
+Beef Products*30.45*0*11.14*231*0*high,low,high,high,low
+Beef Products*30.68*0*9.44*216*0*high,low,high,high,low
+Beef Products*22.8*0*30.49*372*0*high,low,high,high,low
+Finfish and Shellfish Products*20.35*0*4.84*131*0*high,low,low,high,low
+Finfish and Shellfish Products*28.89*0*9.71*210*0*high,low,high,high,low
+Finfish and Shellfish Products*18.86*0*3.69*114*0*high,low,low,high,low
+Finfish and Shellfish Products*17.73*0*2.33*97*0*high,low,low,low,low
+Finfish and Shellfish Products*20.04*0*4.24*124*0*high,low,low,high,low
+Finfish and Shellfish Products*19.31*0*0.81*90*0*high,low,low,low,low
+Finfish and Shellfish Products*17.28*0*8.02*146*0*high,low,high,high,low
+Finfish and Shellfish Products*17.83*0*5.6*127*0*high,low,high,high,low
+Finfish and Shellfish Products*22.86*0*7.17*162*0*high,low,high,high,low
+Finfish and Shellfish Products*16.38*0*2.82*95*0*high,low,low,low,low
+Finfish and Shellfish Products*18.09*8.04*13.33*229*0.7*high,low,high,high,low
+Finfish and Shellfish Products*24.6*4*17.9*264*0*high,low,high,high,low
+Finfish and Shellfish Products*18.99*0*1.91*98*0*high,low,low,low,low
+Finfish and Shellfish Products*16.36*0*11.9*177*0*high,low,high,high,low
+Finfish and Shellfish Products*17.81*0*0.67*82*0*high,low,low,low,low
+Finfish and Shellfish Products*22.83*0*0.86*105*0*high,low,low,high,low
+Finfish and Shellfish Products*22.76*0*0.86*105*0*high,low,low,high,low
+Finfish and Shellfish Products*62.82*0*2.37*290*0*high,low,low,high,low
+Finfish and Shellfish Products*15.27*0*0.41*69*0*high,low,low,low,low
+Finfish and Shellfish Products*17.78*0*3.17*104*0*high,low,low,high,low
+Finfish and Shellfish Products*18.2*7.54*12.67*221*0.4*high,low,high,high,low
+Finfish and Shellfish Products*18.99*0*0.69*87*0*high,low,low,low,low
+Finfish and Shellfish Products*18.5*0*0.7*85*0*high,low,low,low,low
+Finfish and Shellfish Products*17.54*0*4.93*119*0*high,low,low,high,low
+Finfish and Shellfish Products*18.44*0*11.66*184*0*high,low,high,high,low
+Finfish and Shellfish Products*23.65*0*14.95*236*0*high,low,high,high,low
+Finfish and Shellfish Products*11.01*21.66*16.23*277*1.5*high,high,high,high,high
+Finfish and Shellfish Products*12.41*0*1.93*70*0*high,low,low,low,low
+Finfish and Shellfish Products*15.24*0*2.37*86*0*high,low,low,low,low
+Finfish and Shellfish Products*9.07*7.41*1.73*84*0*low,low,low,low,low
+Finfish and Shellfish Products*19.38*0*1.02*92*0*high,low,low,low,low
+Finfish and Shellfish Products*24.84*0*1.3*118*0*high,low,low,high,low
+Finfish and Shellfish Products*16.32*0*0.45*74*0*high,low,low,low,low
+Finfish and Shellfish Products*19.99*0*0.55*90*0*high,low,low,low,low
+Finfish and Shellfish Products*25.23*0*0.96*116*0*high,low,low,high,low
+Finfish and Shellfish Products*18.56*0*1.33*91*0*high,low,low,low,low
+Finfish and Shellfish Products*22.54*0*1.61*111*0*high,low,low,high,low
+Finfish and Shellfish Products*14.37*0*13.84*186*0*high,low,high,high,low
+Finfish and Shellfish Products*17.96*0*9.04*158*0*high,low,high,high,low
+Finfish and Shellfish Products*23.03*0*11.59*203*0*high,low,high,high,low
+Finfish and Shellfish Products*14.19*9.64*18*262*0*high,low,high,high,low
+Finfish and Shellfish Products*24.58*0*12.37*217*0*high,low,high,high,low
+Finfish and Shellfish Products*16.39*0*13.88*195*0*high,low,high,high,low
+Finfish and Shellfish Products*18.99*0*0.64*87*0*high,low,low,low,low
+Finfish and Shellfish Products*17.66*0*1.06*85*0*high,low,low,low,low
+Finfish and Shellfish Products*18.6*0*13.89*205*0*high,low,high,high,low
+Finfish and Shellfish Products*23.85*0*17.81*262*0*high,low,high,high,low
+Finfish and Shellfish Products*23.19*0*6.3*156*0*high,low,high,high,low
+Finfish and Shellfish Products*20.28*0*2*105*0*high,low,low,high,low
+Finfish and Shellfish Products*20.07*0*7.89*158*0*high,low,high,high,low
+Finfish and Shellfish Products*19.29*0*6.3*139*0*high,low,high,high,low
+Finfish and Shellfish Products*23.59*0*6.32*158*0*high,low,high,high,low
+Finfish and Shellfish Products*20.53*0*6.73*148*0*high,low,high,high,low
+Finfish and Shellfish Products*14.48*0*1.52*76*0*high,low,low,low,low
+Finfish and Shellfish Products*19.35*0*3.79*117*0*high,low,low,high,low
+Finfish and Shellfish Products*24.81*0*4.86*150*0*high,low,low,high,low
+Finfish and Shellfish Products*15.31*0*1.54*79*0*high,low,low,low,low
+Finfish and Shellfish Products*18.51*0*1.87*96*0*high,low,low,low,low
+Finfish and Shellfish Products*16.64*0*0.91*79*0*high,low,low,low,low
+Finfish and Shellfish Products*19.39*0*0.92*91*0*high,low,low,low,low
+Finfish and Shellfish Products*24.86*0*1.18*117*0*high,low,low,high,low
+Finfish and Shellfish Products*19.26*0*0.69*88*0*high,low,low,low,low
+Finfish and Shellfish Products*24.69*0*0.88*113*0*high,low,low,high,low
+Finfish and Shellfish Products*19.14*0*1.22*93*0*high,low,low,low,low
+Finfish and Shellfish Products*19.44*0*0.98*92*0*high,low,low,low,low
+Finfish and Shellfish Products*12.19*0*0.41*56*0*high,low,low,low,low
+Finfish and Shellfish Products*23.48*0*1.18*111*0*high,low,low,high,low
+Finfish and Shellfish Products*18.48*0*9.47*164*0*high,low,high,high,low
+Finfish and Shellfish Products*23.69*0*12.14*211*0*high,low,high,high,low
+Finfish and Shellfish Products*18.36*0*1.34*90*0*high,low,low,low,low
+Finfish and Shellfish Products*22.23*0*1.62*109*0*high,low,low,high,low
+Finfish and Shellfish Products*22.32*1.5*6.42*143*0*high,low,high,high,low
+Finfish and Shellfish Products*16.41*0*0.7*76*0*high,low,low,low,low
+Finfish and Shellfish Products*13.41*0*15.3*195*0*high,low,high,high,low
+Finfish and Shellfish Products*17.65*0*20.14*257*0*high,low,high,high,low
+Finfish and Shellfish Products*19.84*0*6.34*142*0*high,low,high,high,low
+Finfish and Shellfish Products*18.28*0*4.32*117*0*high,low,low,high,low
+Finfish and Shellfish Products*19.93*0*10.43*179*0*high,low,high,high,low
+Finfish and Shellfish Products*20.14*0*3.77*120*0*high,low,low,high,low
+Finfish and Shellfish Products*21.43*0*5.5*141*0*high,low,high,high,low
+Finfish and Shellfish Products*21.62*0*5.93*146*0*high,low,high,high,low
+Finfish and Shellfish Products*27.36*0*7.5*184*0*high,low,high,high,low
+Finfish and Shellfish Products*20.5*0*4.4*127*0*high,low,low,high,low
+Finfish and Shellfish Products*19.68*0*4.97*129*0*high,low,low,high,low
+Finfish and Shellfish Products*22.25*0*4.69*131*0*high,low,low,high,low
+Finfish and Shellfish Products*26.48*0*5.57*156*0*high,low,high,high,low
+Finfish and Shellfish Products*23.59*0*7.39*167*0*high,low,high,high,low
+Finfish and Shellfish Products*24.62*0*11.45*208*0*high,low,high,high,low
+Finfish and Shellfish Products*20.86*0.54*10.45*185*0.1*high,low,high,high,low
+Finfish and Shellfish Products*18.88*0*2.73*105*0*high,low,low,high,low
+Finfish and Shellfish Products*18.43*0*2*97*0*high,low,low,low,low
+Finfish and Shellfish Products*23.63*0*2.56*124*0*high,low,low,high,low
+Finfish and Shellfish Products*16.74*0*3.61*104*0*high,low,low,high,low
+Finfish and Shellfish Products*16.93*0*13.77*197*0*high,low,high,high,low
+Finfish and Shellfish Products*20.98*0*4.51*130*0*high,low,low,high,low
+Finfish and Shellfish Products*18.62*6.39*13.82*228*0*high,low,high,high,low
+Finfish and Shellfish Products*20.21*0*2.41*108*0*high,low,low,high,low
+Finfish and Shellfish Products*26.02*0*1.63*126*0*high,low,low,high,low
+Finfish and Shellfish Products*17.63*0*2.42*97*0*high,low,low,low,low
+Finfish and Shellfish Products*22.6*0*3.1*124*0*high,low,low,high,low
+Finfish and Shellfish Products*20.51*0*1.34*100*0*high,low,low,high,low
+Vegetables and Vegetable Products*1.8*6.69*0.11*29*1.1*low,low,low,low,high
+Vegetables and Vegetable Products*3.2*5*0.7*32*2.1*low,low,low,low,high
+Vegetables and Vegetable Products*0.81*7.62*0.2*31*1*low,low,low,low,high
+Vegetables and Vegetable Products*1.58*16.02*0.07*66*3.1*low,high,low,low,high
+Vegetables and Vegetable Products*2.17*5.29*0.47*28*2.2*low,low,low,low,high
+Vegetables and Vegetable Products*1.56*14.39*0.22*56*2.1*low,low,low,low,high
+Vegetables and Vegetable Products*2.56*4.51*0.47*26*2*low,low,low,low,high
+Vegetables and Vegetable Products*2.27*3.11*0.25*19*2.8*low,low,low,low,high
+Vegetables and Vegetable Products*1.7*2.8*0.2*16*2*low,low,low,low,high
+Vegetables and Vegetable Products*1.3*2.13*0.17*12*1.4*low,low,low,low,high
+Vegetables and Vegetable Products*1.87*4.51*0.21*22*2.5*low,low,low,low,high
+Vegetables and Vegetable Products*1.63*6.41*0.24*34*2.1*low,low,low,low,high
+Vegetables and Vegetable Products*1.36*9.56*0.19*42*1.4*low,low,low,low,high
+Vegetables and Vegetable Products*0.77*6*0.1*26*1.7*low,low,low,low,high
+Vegetables and Vegetable Products*0.71*6.11*0.05*26*1.4*low,low,low,low,high
+Vegetables and Vegetable Products*1.32*17.01*0.3*71*4*low,high,low,low,high
+Vegetables and Vegetable Products*3.27*6.46*0.23*40*2.8*low,low,low,low,high
+Vegetables and Vegetable Products*3.5*8.43*0.38*50*3.1*low,low,low,low,high
+Vegetables and Vegetable Products*5.36*15.63*0.22*84*5.5*low,high,low,low,high
+Vegetables and Vegetable Products*3.19*9.75*0.3*53*3.3*low,low,low,low,high
+Vegetables and Vegetable Products*4.42*12.58*0.35*69*4.1*low,low,low,low,high
+Vegetables and Vegetable Products*5.15*14.26*0.27*78*4.5*low,low,low,low,high
+Vegetables and Vegetable Products*7.05*17.08*0.51*98*0*low,high,low,low,low
+Vegetables and Vegetable Products*2.17*8.48*0.27*38*3.3*low,low,low,low,high
+Vegetables and Vegetable Products*3.09*10.12*0.42*48*3.1*low,low,low,low,high
+Vegetables and Vegetable Products*2.54*8.63*0.2*45*2.2*low,low,low,low,high
+Vegetables and Vegetable Products*1.87*8.81*0.44*40*1.5*low,low,low,low,high
+Vegetables and Vegetable Products*0.9*5.1*0.1*21*1.3*low,low,low,low,high
+Vegetables and Vegetable Products*0.99*6.03*0.3*31*2.1*low,low,low,low,high
+Vegetables and Vegetable Products*0.92*6.11*0.2*26*1.2*low,low,low,low,high
+Vegetables and Vegetable Products*0.92*6.7*0.2*28*1.2*low,low,low,low,high
+Vegetables and Vegetable Products*0.92*6.11*0.2*26*1.2*low,low,low,low,high
+Vegetables and Vegetable Products*0.95*3.31*0.18*16*0.9*low,low,low,low,low
+

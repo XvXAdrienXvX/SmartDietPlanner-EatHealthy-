@@ -1,0 +1,41 @@
+﻿@model CoreDietPlan.Models.DietUsers
+
+@{
+    ViewData["Title"] = "Suspend";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<body>
+
+
+    <h4>Edit Account Status</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Suspend">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="UserName" class="control-label"></label>
+                    <input asp-for="UserName" class="form-control" readonly/>
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Status">Change account status:</label>
+                    <select name="Status" class="form-control" id="Status">
+                       @ViewBag.opt
+                    </select>
+                </div>  
+
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-default" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+
+</body>

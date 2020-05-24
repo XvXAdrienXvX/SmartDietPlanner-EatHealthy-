@@ -1,0 +1,122 @@
+﻿
+@{
+    int i; //for c# loop
+}
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/js/Chart.min.js"></script>
+    <title>My Chart.js Chart</title>
+</head>
+<body>
+  
+    <div class="container">
+        <canvas id="myChart"></canvas>
+    </div>
+    
+    <script>
+        var i = 0; //for jsloop
+        var WeeksArr = [];
+        var WeeksData = [];
+        var WeeksW2HData = [];
+        var data = [12, 23, 23, 12];
+@{        
+
+    for ( i = 0; i < ViewBag.weeks.Length; i++){
+      <text> WeeksArr[i] = "@ViewBag.weeks[@i]"; i++;</text>
+
+
+    }
+    i = 0;
+    <text> i = 0; </text>
+    for( i = 0; i < ViewBag.WeeklyBMIs.Length; i++){
+      <text> WeeksData[i] = "@ViewBag.WeeklyBMIs[@i]"; i++;</text>
+
+
+    }
+    i = 0;
+    <text> i = 0; </text>
+    for( i = 0; i < ViewBag.WeeklyW2Hs.Length; i++){
+      <text> WeeksW2HData[i] = "@ViewBag.WeeklyW2Hs[@i]"; i++;</text>
+
+
+    }
+  }
+        //do an if to check how many dataset, if 1 then show somwething else show the below
+    let myChart = document.getElementById('myChart').getContext('2d');
+
+    // Global Options
+    Chart.defaults.global.defaultFontFamily = 'Lato';
+    Chart.defaults.global.defaultFontSize = 18;
+    Chart.defaults.global.defaultFontColor = '#777';
+
+        let massPopChart = new Chart(myChart, {
+            type: 'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+            data: {
+                labels: WeeksArr,
+                datasets: [{
+                    label: 'BMI',
+                    data: WeeksData,
+                    //backgroundColor:'green',
+                    //backgroundColor:[
+                    //  'rgba(255, 99, 132, 0.6)'
+                    //],
+                    borderWidth: 1,
+                    borderColor: '#777',
+                    hoverBorderWidth: 3,
+                    hoverBorderColor: '#000'
+                },
+                {
+
+                    label: 'H2W',
+                    data: WeeksW2HData,
+                    //backgroundColor:'red',
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.6)'
+                    ],
+                    borderWidth: 1,
+                    borderColor: '#777',
+                    hoverBorderWidth: 3,
+                    hoverBorderColor: '#000'
+
+                }
+
+                ]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Progress Tracker',
+                    fontSize: 25
+                },
+                legend: {
+                    display: true,
+                    position: 'right',
+                    labels: {
+                        fontColor: '#000'
+                    }
+                },
+                layout: {
+                    padding: {
+                        left: 50,
+                        right: 0,
+                        bottom: 0,
+                        top: 0
+                    }
+                },
+                tooltips: {
+                    enable: true
+                }
+
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+﻿chicken breast,0.00,0.75,0.19,198,low carb and high protein,low calorie
+roast beef,0.02,0.65,0.29,11,low carb and high protein,low calorie
+grilled salmon filet,0.00,0.43,0.54,468,low carb and high fat,high calorie
+boiled potato,0.91,0.08,0.01,118,high carb and low fat,low calorie
+oatmeal,0.67,0.14,0.19,166,high carb and low fat,low calorie
+boiled egg,0.03,0.32,0.62,78,high fat and high protein,low calorie
+greek yogurt,0.24,0.69,0.06,100,low fat and high protein,low calorie
+wholemeal bread,0.68,0.20,0.12,81,high carb and low fat,low calorie
+mixed vegetables,0.74,0.18,0.08,45,high carb and low fat,low calorie
+macaroni,0.78,0.15,0.05,190,high carb and low fat,low calorie

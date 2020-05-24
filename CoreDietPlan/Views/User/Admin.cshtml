@@ -1,0 +1,78 @@
+﻿@{
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="~/js/AdminScript.js"></script>
+<link href="~/css/AdminStyle.css" rel="stylesheet" />
+<!------ Include the above in your HEAD tag ---------->
+
+<section class="search-banner" id="search-banner">
+    <div class="container py-5 my-5">
+        <div class="row text-center pb-4">
+            <div class="col-md-12">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group ">
+                                    <input type="number" id="num" name="" value="">
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-4" style="right:25%;">
+
+                                <div class="form-group ">
+                                    <select id="serving" class="form-control">
+                                        <option selected>Serving</option>
+                                        <option value="g">Gram</option>
+                                        <option value="cup">Cup</option>
+                                        <option value="oz">Ounces</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="right:25%;">
+                                <div class="form-group ">
+                                    <select id="fgroup" class="form-control">
+                                        <option selected>Food Group</option>
+                                        <option value="Dairy">Dairy</option>
+                                        <option value="Protein">Protein</option>
+                                        <option value="Fruit">Fruit</option>
+                                        <option value="Vegetable">Vegetable</option>
+                                        <option value="Grain">Grain</option>
+                                        <option value="Fat">Fat</option>
+                                        <option value="Legume">Legume</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group ">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="form-group ">
+                                    <input type="text" id="food" class="form-control" placeholder="Enter Food">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-primary pl-5 pr-5" id="enter">Enter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

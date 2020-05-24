@@ -1,0 +1,144 @@
+﻿
+
+section {
+    padding: 100px 0;
+}
+
+
+
+.card-content {
+    background: #ffffff;
+    border: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.card-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    z-index: 1;
+}
+
+    .card-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .card-img span {
+        position: absolute;
+        top: 15%;
+        left: 12%;
+        background: #1ABC9C;
+        padding: 6px;
+        color: #fff;
+        font-size: 12px;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        transform: translate(-50%,-50%);
+    }
+
+        .card-img span h4 {
+            font-size: 12px;
+            margin: 0;
+            padding: 10px 5px;
+            line-height: 0;
+        }
+
+.card-desc {
+    padding: 1.25rem;
+}
+
+
+    .card-desc p {
+        color: #747373;
+        font-size: 14px;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.5;
+        margin: 0px;
+        margin-bottom: 20px;
+        padding: 0;
+        font-family: 'Raleway', sans-serif;
+    }
+
+#SignUp {
+    border-radius: 3px;
+    border: none;
+    width: 15%;
+    color: white;
+    background-color:royalblue;
+    transition: all 0.2s ease-in-out;
+    font-weight: 600;
+    height:10%;
+}
+
+    #SignUp:hover {
+        color: white;
+        filter:brightness(90%);
+    }
+
+#SignIn {
+    border-radius: 3px;
+    border: none;
+    width: 15%;
+    color:grey;
+    background-color:whitesmoke;
+    font-weight: 600;
+    height: 10%;
+}
+#SignIn:hover {
+    color:grey;
+    filter: brightness(90%);
+}
+
+#paragraph1 {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: white;
+    font-weight: 900;
+}
+
+
+#login {
+    height: 50vh;
+    width: 100%;
+    background-color: none;
+    border: none;
+    z-index: 1;
+    top: 70%;
+    position:absolute;
+    left:0;
+    right:0;
+    text-align: center;
+}
+#jumbo{
+    min-width:100%;
+}
+.style_prevu_kit {
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+
+    .style_prevu_kit:hover {
+        box-shadow: 0px 0px 150px #000000;
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.1);
+        transition: all 200ms ease-in;
+        transform: scale(1.1);
+    }
+
+#header {
+    font-family: roboto slab,serif;
+    color: #fff !important;
+    font-size: 6em;
+    font-weight: 900;
+    border-radius: 4px;
+}

@@ -1,0 +1,13 @@
+Cucumber*1 medium*1.3*7.3*0.2*30*1*low,high,low,low,low
+Potato*1 medium*4.3*37*0.2*161*3.8*low,high,low,low,high
+Sweet Potato*1 medium*2.1*27*0.2*115*3.8*low,high,low,low,high
+Lobster*3 oz*22*2.7*1.6*122*0*high,low,low,low,low
+Salmon*1 fillet*50*0*28*468*0*high,low,high,high,low
+Tuna*3 oz*25*0*0.5*111*0*high,low,low,low,low
+Chicken*2 oz*20*0*11*187*0*high,low,high,high,low
+Beef*3 oz*22*0*17*247*0*high,low,high,high,low
+lean Beef*3 oz*24*0*10*196*0*high,low,high,high,low
+Egg*1 large*6.3*0.4*4.8*72*0*high,low,high,low,low
+Apple*1 medium*0.5*25*0.3*95*4.4*low,high,low,low,high
+
+

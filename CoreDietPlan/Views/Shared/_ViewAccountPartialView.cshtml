@@ -1,0 +1,128 @@
+﻿@model CoreDietPlan.Models.DietUsers
+
+@{
+    Layout = null;
+}
+<body>
+
+    <form method="post" enctype="multipart/form-data" asp-controller="User" asp-action="UpdateAccount">
+
+        <div class="modal-header">
+            <h4 class="modal-title">Your Account</h4>
+
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wrapper">
+                            <img src="~/images/NoSetProfile.png" alt="" class="image--cover" id="Prev" />
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="control-label"> Update your profile picture</label>
+                    </div>
+                    <div class="col-md-2">
+
+                        <input type="file" id="up" name="files" onchange="previewFile()" disabled><br>
+
+                    </div>
+                </div>
+
+                <br />
+                <div class="row">
+                    <div class="col-md-6">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="UserName" />
+                        <div class="form-group">
+                            <label class="control-label"> First Name</label>
+                            <input asp-for="UserFirstName" class="form-control" />
+                            <span asp-validation-for="UserFirstName" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label class="control-label"> Last Name</label>
+                            <input asp-for="UserLastName" class="form-control" />
+                            <span asp-validation-for="UserLastName" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">Age</label>
+                            <input asp-for="UserAge" class="form-control" />
+                            <span asp-validation-for="UserAge" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label class="control-label">Email</label>
+                            <input asp-for="UserEmail" class="form-control" />
+                            <span asp-validation-for="UserEmail" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="errMessage">
+
+                </div>
+
+                <p class="control-label" id="passwordConfirm" style=" color: black;"> Click <a style="cursor:pointer; color: mediumblue;" onclick="changePWD();"> here </a>if you wish to update your password</p>
+<br />
+                <div class="row" id="PasswordRow" style="display:none;">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">Update Password</label>
+                            <input id="UserPassword" asp-for="UserPassword" class="form-control" value="" />
+                            <span asp-validation-for="UserPassword" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label class="control-label"> Confirm Password</label>
+                            <input id="cpass" class="form-control" />
+                            <span class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <input class="AddFood" type="submit" onclick=" checPW();" value="Save" class="btn btn-default" />
+                </div>
+            </div>
+            </div>
+                </form>
+    <script src="~/js/ModelJS.js"></script>
+                <script>
+                    $("#toggleModal").click();
+                    var spin = document.getElementById("spinner");
+                    spin.innerHTML = "";
+                    function checPW() {
+                        var pwd = document.getElementById("UserPassword").value;
+                        var cpwd = document.getElementById("cpass").value;
+                        if (pwd !== cpwd) {
+                            document.getElementById("errMessage").innerHTML = " <div class='alert  alert-danger alert-dismissible fade show' role='alert'>Password don't Match!</div>";
+                            event.preventDefault();
+                        }
+                        else
+                            document.getElementById("errMessage").innerHTML = "";                        
+                    }
+
+                    function changePWD() {
+                        document.getElementById("passwordConfirm").style.display = "none";
+                        document.getElementById("PasswordRow").style.display = "block";
+
+
+                    }
+                </script>
+</body>

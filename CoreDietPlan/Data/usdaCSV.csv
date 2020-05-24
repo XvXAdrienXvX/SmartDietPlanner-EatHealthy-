@@ -1,0 +1,25 @@
+meal,Availability,Category,Carb,Protein,Fat,Calorie,Preference,outcome
+chicken breast,yes,overweight,low,high,low,low,low,negative
+chicken breast,yes,overweight,low,high,low,low,high,positive
+chicken breast,yes,overweight,high,low,high,high,low,negative
+chicken breast,yes,overweight,high,low,high,high,high,negative
+chicken breast,yes,obese,low,high,low,low,low,negative
+chicken breast,yes,obese,low,high,low,low,high,positive
+chicken breast,yes,obese,high,low,high,high,low,negative
+chicken breast,yes,obese,high,low,high,high,high,negative
+chicken breast,yes,normal,low,high,low,low,low,negative
+chicken breast,yes,normal,low,high,low,low,high,positive
+chicken breast,yes,normal,high,low,high,high,low,negative
+chicken breast,yes,normal,high,low,high,high,high,positive
+roast beef,yes,overweight,low,high,low,low,low,negative
+roast beef,yes,overweight,low,high,low,low,high,positive
+roast beef,yes,overweight,high,low,high,high,low,negative
+roast beef,yes,overweight,high,low,high,high,high,negative
+roast beef,yes,obese,low,high,low,low,low,negative
+roast beef,yes,obese,low,high,low,low,high,positive
+roast beef,yes,obese,high,low,high,high,low,negative
+roast beef,yes,obese,high,low,high,high,high,negative
+roast beef,yes,normal,low,high,low,low,low,negative
+roast beef,yes,normal,low,high,low,low,high,positive
+roast beef,yes,normal,high,low,high,high,low,negative
+roast beef,yes,normal,high,low,high,high,high,positive

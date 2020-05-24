@@ -1,0 +1,27 @@
+﻿chicken breast,yes,overweight,low,high,low,low,low,negative,0
+chicken breast,yes,overweight,low,high,low,low,medium,positive,1
+chicken breast,yes,overweight,low,high,low,low,high,positive,1
+chicken breast,yes,obese,low,high,low,low,low,negative,0
+chicken breast,yes,obese,low,high,low,low,medium,positive,1
+chicken breast,yes,obese,low,high,low,low,high,positive,1
+chicken breast,yes,normal,low,high,low,low,low,negative,0
+chicken breast,yes,normal,low,high,low,low,medium,positive,1
+chicken breast,yes,normal,low,high,low,low,high,positive,1
+roast beef,yes,overweight,low,high,low,low,low,negative,0
+roast beef,yes,overweight,low,high,low,low,medium,positive,1
+roast beef,yes,overweight,low,high,low,low,high,positive,1
+roast beef,yes,obese,low,high,low,low,low,negative,0
+roast beef,yes,obese,low,high,low,low,medium,positive,1
+roast beef,yes,obese,low,high,low,low,high,positive,1
+roast beef,yes,normal,low,high,low,low,low,negative,0
+roast beef,yes,normal,low,high,low,low,medium,positive,1
+roast beef,yes,normal,low,high,low,low,high,positive,1
+grilled salmon filet,yes,overweight,low,high,high,medium,low,negative,0
+grilled salmon filet,yes,overweight,low,high,high,medium,medium,positive,1
+grilled salmon filet,yes,overweight,low,high,high,medium,high,positive,1
+grilled salmon filet,yes,obese,low,high,high,medium,low,negative,0
+grilled salmon filet,yes,obese,low,high,high,medium,medium,positive,1
+grilled salmon filet,yes,obese,low,high,high,medium,high,positive,1
+grilled salmon filet,yes,normal,low,high,high,medium,low,negative,0
+grilled salmon filet,yes,normal,low,high,high,medium,medium,positive,1
+grilled salmon filet,yes,normal,low,high,high,medium,high,positive,1

@@ -1,0 +1,17 @@
+oatmeal*1 cup*5.9*28*3.6*166*4*low,high,low,high,high
+whole wheat pasta*1 cup*9.6*48*2.7*150*6.2*low,high,low,high,low
+skim milk*1 cup*3.4*5*0.1*34*0*high,low,low,low,low
+Asparagus*5 spears*1.8*3.1*0.2*17*1.5*low,high,low,low,low
+Broccoli*1 spear*0.9*2.7*0.1*13*1.2*low,high,low,low,low
+Carrot*1*0.3*3.8*0.1*16*1.4*low,high,low,low,low
+Cucumber*1 medium*1.3*7.3*0.2*30*1*low,high,low,low,low
+Potato*1 medium*4.3*37*0.2*161*3.8*low,high,low,low,high
+Sweet Potato*1 medium*2.1*27*0.2*115*3.8*low,high,low,low,high
+Lobster*3 oz*22*2.7*1.6*122*0*high,low,low,low,low
+Salmon*1 fillet*50*0*28*468*0*high,low,high,high,low
+Tuna*3 oz*25*0*0.5*111*0*high,low,low,low,low
+Chicken*2 oz*20*0*11*187*0*high,low,high,high,low
+Beef*3 oz*22*0*17*247*0*high,low,high,high,low
+lean Beef*3 oz*24*0*10*196*0*high,low,high,high,low
+Egg*1 large*6.3*0.4*4.8*72*0*high,low,high,low,low
+Apple*1 medium*0.5*25*0.3*95*4.4*low,high,low,low,high

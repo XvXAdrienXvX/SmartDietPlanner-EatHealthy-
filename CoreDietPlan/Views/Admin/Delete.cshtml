@@ -1,0 +1,94 @@
+﻿@model CoreDietPlan.Models.DietUsers
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>DietUsers</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserFirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UserFirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserLastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UserLastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserAge)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UserAge)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserEmail)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UserEmail)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserGender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UserGender)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserPassword)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UserPassword)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserWeightCategory)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UserWeightCategory)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ResetPasswordCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ResetPasswordCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NewUser)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NewUser)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsVeg)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsVeg)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SetPicture)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SetPicture)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="UserName" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
+</body>
+</html>

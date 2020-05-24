@@ -1,0 +1,49 @@
+﻿.nav-pills > .noround a {
+    border-radius: 0px;
+    background-color: #eee
+}
+
+.nav.nav-pills > li + li {
+    margin-left: 2px;
+    /*orig: 2px*/
+}
+
+.tab-pane {
+    background-color: rgba(125, 125, 125, 0.1);
+    padding: 1.5rem;
+    margin-top: 0.3rem;
+}
+
+    .tab-pane h3 {
+        margin-top: 1rem;
+    }
+
+li.active .btn-group .btn {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+table.table {
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+thead .table-head {
+    box-sizing: border-box;
+    color: rgb(125, 125, 125, 0.7);
+    height: 50%;
+}
+body {
+    background: #F1F3FA;
+}
+
+.profile-content {
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+}
+/* Profile Content */
+.profile-content {
+    padding: 20px;
+    background: #fff;
+    min-height: 200px;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,10 @@
+
+.image--cover {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center right;
+     object-position: center right;
+}

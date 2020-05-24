@@ -1,0 +1,282 @@
+﻿@{
+
+                Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link href="~/css/RegisterStyle.css" rel="stylesheet" />
+    <link href="~/css/LoadingStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <style>
+        a {
+            text-decoration: none;
+            color: lightgrey;
+        }
+
+        ::-webkit-input-placeholder {
+            text-align: center;
+            font-size: larger;
+        }
+
+        .fs-subtitle {
+            color: white;
+        }
+
+
+
+        .containerInput > .tool-tip-wrapper {
+            text-align:left;
+            display: none;
+            width: 90%;
+            background: #FFF;
+            border-radius: 4px;
+            position: absolute;
+            color: black;
+            box-shadow: 0 0 10px 0 #C1C1C1;
+        }
+
+            .containerInput > .tool-tip-wrapper:before {
+                text-align: left;
+                content: "";
+                width: 8px;
+                height: 8px;
+                background: #FFF;
+                box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, .15);
+                position: absolute;
+                top: -4px;
+                left: 16px;
+                transform: rotate(45deg);
+                border-right: none;
+                border-bottom: none;
+            }
+
+        .EyeIcon {
+            height: 48.5px;
+            position: absolute;
+            top: -9.25vh;
+            left: 46vh;
+        }
+        button:focus, input[type="button"]:focus {
+            outline: none;
+        }
+       
+    </style>
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div id="RegisterSpinner">
+
+    </div>
+
+    <!-- multistep form -->
+    <form method="post" action="Signup" id="msform">
+        <!-- progressbar -->
+        <ul id="progressbar">
+            <li class="active">Account Setup</li>
+            <li>Personal Details</li>
+
+            <li>Additional Details</li>
+        </ul>
+
+        <!-- fieldsets -->
+        <fieldset>
+            <h2 class="fs-title">Create your account</h2>
+            <h3 class="fs-subtitle">Your Login Details</h3>
+            <div id="err1">
+
+            </div>
+            <div id="UsernameErr"></div>
+            <input class="inputs FirstFormInputs RestrictTxt" id="username" type="text" name="UserName" placeholder="Username" />
+            <div id="PwdErr"></div>
+
+            <button type="button" id="show_hide_password" style="width:100%;border:none; margin-bottom: 5px;height:20px; background-color: #27AE60"> <i style="color:white" class="fa fa-eye-slash" aria-hidden="true"></i></button>
+
+            <div id="react-root">
+                <div class="containerInput">
+                    <input class="inputs FirstFormInputs RestrictTxt" id="pwdInput" type="password" name="UserPassword" placeholder="Password" />
+
+                    <div class="tool-tip-wrapper" id="PwdTip" style="z-index: 100">
+
+
+                        <h4 style="padding-left:5%">Password must contain the following:</h4>
+                        <p><i id="letter" style="color: red; padding-right:5%; padding-left:5%;" class="fas fa-times"></i>A <b>lowercase</b> letter</p>
+                        <p><i id="capital" style="color: red; padding-right:5%; padding-left:5%;" class="fas fa-times"></i>A <b>capital (uppercase)</b> letter</p>
+                        <p><i id="number" style="color: red; padding-right:5%; padding-left:5%;" class="fas fa-times"></i>A <b>number</b></p>
+                        <p><i id="length" style="color: red; padding-right:5%; padding-left:5%;" class="fas fa-times"></i>Minimum <b>8 characters</b></p>
+                    </div>
+                </div>
+            </div>
+            <input class="inputs FirstFormInputs RestrictTxt" type="password" id="cpass" name="cpass" placeholder="Confirm Password" />
+
+            <input type="button" name="next" class="next action-button" value="Next" />
+
+            <p style="color: wheat">Already have an account? <a href="Login">Login</a> instead</p>
+
+        </fieldset>
+        <fieldset>
+            <h2 class="fs-title">Personal Details</h2>
+            <h3 class="fs-subtitle">We will never sell it</h3>
+            <div id="err2">
+
+            </div>
+            <input class="inputs SecondFormInputs RestrictTxt" type="text" name="UserFirstName" placeholder="First Name" />
+            <input class="inputs SecondFormInputs RestrictTxt" type="text" name="UserLastName" placeholder="Last Name" />
+            <div id="AgeErr"></div>
+            <input class="inputs SecondFormInputs  NumberInput" type="number" name="UserAge" placeholder="Age" />
+            <div id="MailErr"></div>
+            <input class="inputs SecondFormInputs" type="email" name="UserEmail" placeholder="Email" />
+
+
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <input type="button" name="next" class="next action-button" value="Next" />
+            <p style="color: wheat">Already have an account? <a href="Login">Login</a> instead</p>
+
+        </fieldset>
+        <fieldset>
+            <h2 class="fs-title">Additional Details</h2>
+            <h3 class="fs-subtitle">Please Be As Precise As Possible</h3>
+            <div id="err3">
+
+            </div>
+
+            <p style="color:white">    Preferred metric for weight </p>
+            <div style="align-content: space-between">
+                <label class="radio-inline">
+                    <input id="kg" type="radio" name="WeightMetric" value="kg" checked><a style="color:white">Kg</a>
+                </label>
+
+                <label class="radio-inline">
+                    <input id="Pounds" type="radio" name="WeightMetric" value="Pounds"><a style="color:white">Pounds</a>
+                </label>
+            </div>
+            <input class="inputs ThirdFormInputs WeightNumeric " min="0.00" step=0.01 type="number" name="UserWeight" placeholder="Weight" />
+            <p style="color:white"> Preferred metric for Height </p>
+
+            <div style="align-content: space-between">
+                <label class="radio-inline">
+                    <input id="Meters" type="radio" onchange="changeMetric()" name="HeightMetric" value="Meters" checked><a style="color:white">Meters</a>
+                </label>
+
+                <label class="radio-inline">
+                    <input id="Feet" type="radio" onchange="changeMetric()" name="HeightMetric" value="Feet"><a style="color:white">Inches</a>
+                </label>
+            </div><div id="HeightDiv">
+                <input class="inputs ThirdFormInputs heightNumeric " type="number" min="0.00" step=0.01 name="HeightMeter" placeholder="Height(m)" />
+
+
+            </div>
+            <br />
+            <input class="inputs ThirdFormInputs waistNumeric " min="0.00" step=0.01 type="number" name="UserWc" placeholder="Waist Circumference(cm)" />
+
+
+            <div style="align-content: space-between">
+                <label class="radio-inline">
+                    <input id="male" type="radio" name="UserGender" value="Male" checked><a style="color:white">Male</a>
+                </label>
+
+                <label class="radio-inline">
+                    <input id="female" type="radio" name="UserGender" value="Female"><a style="color:white">Female</a>
+                </label>
+            </div>
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+
+            <input type="button" onclick="SubmitForm()" class=" action-button" value="Register" />
+            <p style="color: wheat">Already have an account? <a href="Login">Login</a> instead</p>
+
+        </fieldset>
+    </form>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/jquery.easing.min.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+    <script src="~/js/PasswordConstraint.js"></script>
+    <script src="~/js/RegisterJS.js"></script>
+
+
+    <script>
+
+
+        $(document).ready(function () {
+            $('input.inputs').bind('copy paste', function (e) {
+                e.preventDefault();
+            });
+        });
+        var inputsCons = new Array(3);
+        inputsCons[0] = document.querySelector(".heightNumeric");
+        inputsCons[1] = document.querySelector(".WeightNumeric");
+        inputsCons[2] = document.querySelector(".waistNumeric");
+
+
+
+        var i = 0;
+        for (i = 0; i < 3; i++) {
+            inputsCons[i].addEventListener("keypress", function (evt) {
+                if (evt.which != 46 && evt.which < 48 || evt.which > 57) {
+                    evt.preventDefault();
+                }
+            });
+        }
+        document.querySelector(".NumberInput").addEventListener("keypress", function (evt) {
+            if (evt.which != 8 && evt.which != 0 && evt.which < 48 || evt.which > 57) {
+                evt.preventDefault();
+            }
+        });
+
+
+
+        function changeMetric() {
+            var meter = document.getElementById("Meters");
+
+            if (meter.checked == true) {
+                document.getElementById("HeightDiv").innerHTML = " <input class='inputs ThirdFormInputs  heightNumeric' type='number' min='0.00' step=0.01 name='HeightMeter' placeholder='Height (m)' />";
+                document.querySelector(".heightNumeric").addEventListener("keypress", function (evt) {
+                    if (evt.which != 46 && evt.which < 48 || evt.which > 57) {
+                        evt.preventDefault();
+                    }
+                });
+                disablePaste();
+
+            }
+            else {
+                document.getElementById("HeightDiv").innerHTML = "<div class='row'><div class='col-md-6'  style ='width:100%'> <input class='inputs  ThirdFormInputs HeightFNumeric' type='number'  min='0.00' step=0.01 name='HeightFeet' placeholder='Height (Feet)' style='width: 100%;'/></div>";
+                document.getElementById("HeightDiv").innerHTML += "<div class='col-md-6' style ='width:100%'>";
+                document.getElementById("HeightDiv").innerHTML += " <input class='inputs ThirdFormInputs  HeightINumeric' type='number' min='0.00' step=0.01 name='HeightInches' placeholder='Height (Inches)' style='width: 100%;'/></div></div>";
+
+                var updateInp = new Array(2);
+                updateInp[0] = document.querySelector(".HeightINumeric");
+                updateInp[1] = document.querySelector(".HeightFNumeric");
+                disablePaste();
+
+                var n = 0;
+                for (n = 0; n < 2; n++) {
+                    updateInp[n].addEventListener("keypress", function (evt) {
+                        if (evt.which != 46 && evt.which < 48 || evt.which > 57) {
+                            evt.preventDefault();
+                        }
+                    });
+                }
+            }
+        }
+
+
+        function disablePaste() {
+            $('input.').bind('copy paste', function (e) {
+                e.preventDefault();
+            });
+        }
+    </script>
+
+
+
+</body>
+
+</html>

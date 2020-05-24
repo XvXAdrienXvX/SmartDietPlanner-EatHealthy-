@@ -1,0 +1,881 @@
+﻿
+@{
+    int i; //for c# loop
+    Layout = null;
+    double protein = 0;
+    double carb = 0;
+    double Calorie = 0;
+    double fat = 0;
+
+
+    double remainProtein = 0;
+    double remainCarb = 0;
+    double remainCal = 0;
+    double remainFat = 0;
+    double consumedCal = 0;
+    var MacroList = ViewBag.Macros;
+    if (MacroList != null)
+    {
+        protein = Math.Round(MacroList.Protein, 2);
+        carb = Math.Round(MacroList.Carb, 2);
+        Calorie = Math.Round(MacroList.Calorie, 2);
+        fat = Math.Round(MacroList.Fat, 2);
+
+        var ConsumpList = ViewBag.Consumption;
+
+        remainProtein = 0;
+        remainCarb = 0;
+        remainCal = 0;
+        remainFat = 0;
+        consumedCal = 0;
+        int counter = 0;
+        foreach (var m in ConsumpList)
+        {
+            if (counter == 0)
+            {
+                if (Calorie - m < 0)
+                { remainCal = 0; }
+                else
+                {
+                    remainCal = Calorie - m;
+                }
+                consumedCal = m;
+                counter++;
+            }
+            else if (counter == 1)
+            {
+                if (protein - m < 0)
+                { remainProtein = 0; }
+                else
+                {
+                    remainProtein = protein - m;
+                }
+
+                counter++;
+            }
+            else if (counter == 2)
+            {
+                if (carb - m < 0)
+                { remainCarb = 0; }
+                else
+                {
+                    remainCarb = carb - m;
+                }
+
+                counter++;
+            }
+            else
+            {
+                if (fat - m < 0)
+                { remainFat = 0; }
+                else
+                {
+                    remainFat = fat - m;
+                }
+
+            }
+        }
+
+    }
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="~/DashboardItems/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/DashboardItems/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/DashboardItems/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="~/DashboardItems/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="~/DashboardItems/selectFX/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="~/DashboardItems/jqvmap/dist/jqvmap.min.css">
+
+
+    <link rel="stylesheet" href="~/assets/css/style.css">
+
+    <link href="~/css/w3.css" rel="stylesheet" />
+    <link href="~/css/reset.min.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/ModelStyle.css">
+    <script src="~/js/JqModel.js"></script>
+
+    <script src="~/js/bootstrapmodel.min.js"></script>
+    <link href="~/css/Fontcss.css" rel="stylesheet" />
+    <link href="~/css/ProfileStyle.css" rel="stylesheet" />
+    <link href="~/css/LoadingStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <script>
+        var cals =@Calorie;var fatJS =@fat; var carbJS = @carb;
+
+        var proteinJS = @protein;
+
+    </script>
+
+</head>
+
+<body onload=" disableModal(); ">
+
+    <!-- Left Panel -->
+
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand text-uppercase" href="index">
+                    <img src="~/Images/EatHealthy.png" style="height:80%; cursor:pointer ;width:auto;position:absolute;margin-left:-3.7%;top:2%;" />
+                </a>
+                <a class="navbar-brand hidden" href="./"><img src="~/Images/logo.png" alt="Logo"></a>
+            </div>
+
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html"> <i class="menu-icon fas fa-tachometer-alt"></i>Dashboard </a>
+                    </li>
+                    <h3 class="menu-title">Pages</h3><!-- /.menu-title -->
+
+
+
+
+                    
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fas fa-utensils"></i>Diet Planner</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fas fa-utensil-spoon"></i><a href="MLTest">Generate diet plan</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fas fa-running"></i>Daily Activity</a>
+                        <ul class="sub-menu children dropdown-menu" id="ActivitiesDone">
+                            <li style="cursor:pointer"><i class="menu-icon fa fa-plus"></i><a onclick="loadActivityPartial(); load();">Add Activity</a></li>
+                            @ViewBag.TodayAct
+                        </ul>
+                    </li>
+
+
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside><!-- /#left-panel -->
+    <!-- Left Panel -->
+    <!-- Right Panel -->
+
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        <header id="header" class="header">
+
+            <div class="header-menu">
+
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                    <div class="header-left">
+                        <button class="search-trigger"><i class="fa fa-search"></i></button>
+                        <div class="form-inline">
+                            <form class="search-form">
+                                <input list="FoodsDB" class="form-control mr-sm-4" type="text" placeholder="Search through our database of food" aria-label="Search">
+                                <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
+                            </form>
+                        </div>
+
+                        <datalist id="FoodsDB">
+                          
+                        </datalist>
+
+
+                        <div class="dropdown for-message">
+                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    id="message"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="ti-email"></i>
+                                <span class="count bg-primary" id="notifCount">0</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="message">
+
+                                <p class="red">You have <a id="NotifNum">0</a> Mails</p>
+                                <div id="noMsg">
+
+                                    <a class="dropdown-item media bg-flat-color-2" href="#">
+                                        <span class="message media-body">
+                                            <span class="name float-left">System</span>
+                                            <p>No current Message in inbox</p>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div id="NotifMsg" style="display:none">
+
+                                    <a onclick="UpdateInfo()" class="dropdown-item media bg-flat-color-2" href="#">
+                                        <span class="message media-body">
+                                            <span class="name float-left">Admin</span>
+                                            <p>Time to update your information</p>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="image--cover" src="~/images/NoSetProfile.png" style="width: 45px;height: 45px;" alt="User Avatar">
+                        </a>
+
+                        <div class="user-menu dropdown-menu">
+                            <a class="nav-link" style="cursor:pointer" onclick="loadPartial(); load();"><i class="fa fa-user"></i> My Profile</a>
+
+                         
+                            <a onclick="location.href='@Url.Action("Signout", "User")'" class="nav-link" href="#"><i class="fa fa-power-off"></i> Logout</a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </header><!-- /header -->
+        <!-- Header-->
+
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Welcome @ViewBag.username</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="page-header float-right">
+                    <div class="page-title">
+                        <ol class="breadcrumb text-right">
+                            <li class="active">Dashboard</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="spinner">
+        </div>
+        <div class="content mt-3">
+
+            <div class="col-md-12" id="HeaderAlert" style="display: none">
+                <div class="alert  alert-success alert-dismissible fade show" role="alert">
+                    <span class="badge badge-pill badge-success">Success</span> <a id="AlertMsg"></a>
+                    <button type="button" id="closeAlert" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h4 class="card-title mb-0">Progress Tracker</h4>
+                                <div class="small text-muted">@ViewBag.date</div>
+                            </div>
+                            <!--/.col-->
+
+
+
+                        </div>
+                        <!--/.row-->
+                        <div class="chart-wrapper mt-4">
+                            <canvas id="myChart" style="height:390px;"></canvas>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-flat-color-1">
+                    <div class="card-body pb-0" style="min-height: 182px;">
+                        @*<div class="dropdown float-right">
+                            <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton1" data-toggle="dropdown">
+                                <i class="fa fa-cog"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <div class="dropdown-menu-content">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>*@
+                        <h4 style="padding-top:8px;" class="mb-0">
+                            <span>Personal Detail</span>
+                        </h4>
+                        <br />
+                        <p class="text-light">Current BMI: @ViewBag.BMI</p>
+                        <p class="text-light">Current Weight: @ViewBag.Weight</p>
+
+                        <br /><br />
+                        <div class="chart-wrapper px-0" style="height:70px;" height="70">
+                            <canvas id="widgetChart1"></canvas>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--/.col-->
+
+            <div class="col-md-4" style="float:right">
+                <section class="card">
+                    <div class="twt-feed blue-bg">
+                        
+                        <div class="media">
+                         
+                            <div class="media-body">
+                                <h4  class="mb-0">
+                                    <span>Daily Allowances</span>
+                                </h4>
+                                <br />
+                                <p class="text-light" id="AllowedCal">Calories Allowed: @Calorie </p>
+                                <p class="text-light" id="ConsumedCal">Calories Consumed: @consumedCal </p>
+                                <p class="text-light" id="RemainingCal">Calories Remaining: @remainCal</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-category twt-category">
+
+                        <ul>
+                            <li class="active">
+                                <h5 style="color: #6DC5F2" id="ProteinRemain">@remainProtein</h5>
+                                <p style="color: #008CBA">  Proteins </p>
+                            </li>
+                            <li>
+                                <h5 style="color: #6DC5F2" id="CarbRemain">@remainCarb</h5>
+                                <p style="color: #008CBA">Carbs </p>
+                            </li>
+                            <li>
+                                <h5 style="color: #6DC5F2" id="FatRemain">@remainFat</h5>
+                                <p style="color: #008CBA">   Fats </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <br />
+                    <div class="twt-write col-sm-12">
+                        <button style="width:100%" class="AddFood" onclick="ConsumedModel(); load();">Add Food Consumed</button>
+                        </div>
+                    <footer class="twt-footer" style="padding-top: 30px;">
+                    
+                    </footer>
+                </section>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-flat-color-2">
+                    <div class="card-body pb-0" style="min-height: 125px;">
+                        <div class="dropdown float-right">
+                            <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton2" data-toggle="dropdown">
+                                <i class="fa fa-cog"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <div class="dropdown-menu-content">
+                                    <a class="dropdown-item" onclick="UpdateAllergy()" href="#">Update List</a>
+                                    <a class="dropdown-item" onclick="clearAllergies()" href="#">Clear List</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 style="padding-top:8px;" class="mb-0">
+                            <span>Update your Allergy List</span>
+                        </h4>
+                        <br />
+                        <br />
+                        <div class="dropdown-container" style="color:black;width: 100%;">
+                            <div class="dropdown-button noselect" onclick="CheckAllergies()" id="allergies">
+                                <div class="dropdown-label">Allergies</div>
+                                <div class="dropdown-quantity">(<span id="AllergyQuantity" class="quantity">None</span>)</div>
+                                <i class="fa fa-filter"></i>
+                            </div>
+                            <div class="dropdown-list" id="AllergiesList" style="display: none;background:white;">
+                                <input type="search" style="width:100%;" placeholder="Search Food" class="dropdown-search" />
+                                <ul class="AllergiesList"></ul> <!-- need id to populate as below and need to be added to modeljs-->
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-white bg-flat-color-2">
+                    <div class="card-body pb-0" style="min-height: 125px;">
+                        <div class="dropdown float-right">
+                            <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton2" data-toggle="dropdown">
+                                <i class="fa fa-cog"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <div class="dropdown-menu-content">
+                                    <a class="dropdown-item" onclick="UpdatePreference()" href="#">Update List</a>
+                                    <a class="dropdown-item" onclick="clearPreferences()" href="#">Clear List</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 style="padding-top:8px;" class="mb-0">
+                            <span>Update your Preference List</span>
+                        </h4>
+                        <br />
+                        <br />
+
+
+                        <div class="dropdown-container" style="color:black;width: 100%;">
+                            <div class="dropdown-button noselect" onclick="CheckPreferences()" id="Preferences">
+                                <div class="dropdown-label">Preferences</div>
+                                <div class="dropdown-quantity">(<span id="PreferencesQuantity" class="quantity">None</span>)</div>
+                                <i class="fa fa-filter"></i>
+                            </div>
+                            <div class="dropdown-list" id="PreferenceList" style="display: none;background:white;">
+                                <input type="search" style="width:100%;" placeholder="Search Food" class="dropdown-search" />
+                                <ul class="PreferencesList"></ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- .content -->
+    </div><!-- /#right-panel -->
+            <!-- Right Panel -->
+
+            <div class="container">
+                <!-- Trigger the modal with a button -->
+                <button type="button" style="display:none;" id="toggleModal" data-backdrop="static" data-keyboard="false" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div id="ModalContent">
+                                <!--Dynamically updated via JS and partial-->
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="~/DashboardItems/jquery/dist/jquery.min.js"></script>
+            <script src="~/DashboardItems/popper.js/dist/umd/popper.min.js"></script>
+            <script src="~/DashboardItems/bootstrap/dist/js/bootstrap.min.js"></script>
+            <script src="~/assets/js/main.js"></script>
+
+
+            <script src="~/DashboardItems/chart.js/dist/Chart.bundle.min.js"></script>
+            <script src="~/assets/js/dashboard.js"></script>
+            <script src="~/assets/js/widgets.js"></script>
+            <script src="~/js/lodash.min.js"></script>
+
+            <script src="~/js/jquery.min.js"></script>
+            <script src="~/js/ModelJS.js"></script>
+
+
+            <script>
+
+           var i = 0; //for jsloop
+        var WeeksArr = [];
+        var WeeksData = [];
+                var WeeksW2HData = [];
+                var exerciseData = [];
+                var exerciseID = [];
+                var FoodArrJS = [];
+                var FoodIDArrJS = [];
+                var FoodMacro = [];
+
+                var data = [12, 23, 23, 12];
+
+@{
+
+    for (i = 0; i < ViewBag.weeks.Length; i++) {
+      <text> WeeksArr[i] = "@ViewBag.weeks[@i]"; i++;</text>
+
+
+    }
+    i = 0;
+    <text> i = 0; </text>
+    for (i = 0; i < ViewBag.WeeklyBMIs.Length; i++) {
+      <text> WeeksData[i] = "@ViewBag.WeeklyBMIs[@i]"; i++;</text>
+
+
+    }
+    i = 0;
+    <text> i = 0; </text>
+    for (i = 0; i < ViewBag.WeeklyW2Hs.Length; i++) {
+      <text> WeeksW2HData[i] = "@ViewBag.WeeklyW2Hs[@i]"; i++;</text>
+
+
+    }
+    i = 0;
+    <text> i = 0; </text>
+    for (i = 0; i < ViewBag.ExerciseArr.Length; i++) {
+      <text> exerciseData[i] = "@ViewBag.ExerciseArr[@i]";
+                exerciseID[i] = "@ViewBag.ExerciseIDArr[@i]";
+                i++;</text>
+                }
+      i = 0;
+    <text> i = 0; </text>
+    for (i = 0; i < ViewBag.FoodsArr.Length; i++) {
+      <text> FoodArrJS[i] = "@ViewBag.FoodsArr[@i]";
+                FoodIDArrJS[i] = "@ViewBag.FoodsIDArr[@i]";
+                FoodMacro[i] ="@ViewBag.MacroString[@i]";
+                i++;</text>
+                }
+
+    }
+                
+
+            //do an if to check how many dataset, if 1 then show somwething else show the below
+            let myChart = document.getElementById('myChart').getContext('2d');
+
+            // Global Options
+            Chart.defaults.global.defaultFontFamily = 'Lato';
+    Chart.defaults.global.defaultFontSize = 18;
+    Chart.defaults.global.defaultFontColor = '#777';
+
+        let massPopChart = new Chart(myChart, {
+            type: 'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+            data: {
+                labels: WeeksArr,
+                datasets: [{
+                    label: 'BMI',
+                    data: WeeksData,
+                    //backgroundColor:'green',
+                    //backgroundColor:[
+                    //  'rgba(255, 99, 132, 0.6)'
+                    //],
+                    borderWidth: 1,
+                    borderColor: '#777',
+                    hoverBorderWidth: 3,
+                    hoverBorderColor: '#000'
+                },
+                {
+
+                    label: 'WC',
+                    data: WeeksW2HData,
+                    backgroundColor:'#49A3D6',
+                    //backgroundColor: [
+                    //    'rgba(255, 99, 132, 0.6)'
+                    //],
+                    borderWidth: 1,
+                    borderColor: '#777',
+                    hoverBorderWidth: 3,
+                    hoverBorderColor: '#000'
+
+                }
+
+                ]
+            },
+            options: {
+
+                legend: {
+                    display: true,
+                    position: 'top',
+                    labels: {
+                        fontColor: '#000'
+                    }
+                },
+                layout: {
+                    padding: {
+                        left: 50,
+                        right: 0,
+                        bottom: 0,
+                        top: 0
+                    }
+                },
+                tooltips: {
+                    enable: true
+                }
+
+            }
+                });
+
+                function CheckAllergies() {
+        var SelectedAllergies = '@ViewBag.ChoosenAllegies';
+        var AllergyArray = SelectedAllergies.split(",");
+
+                    $('.AllergyChoice').each(function (index, obj) {
+            if (AllergyArray.includes(obj.name)) {
+
+                obj.checked = true;
+                }
+            });
+        }
+
+        function CheckPreferences() {
+            var SelectedAllergies = '@ViewBag.ChoosenPreferences';
+            var PreferencesArray = SelectedAllergies.split(",");
+
+                    $('.preferenceChoice').each(function (index, obj) {
+                if (PreferencesArray.includes(obj.name)) {
+
+                    obj.checked = true;
+                    }
+                });
+    }
+
+    function clearAllergies() {
+                    $('.AllergyChoice').each(function (index, obj) {
+
+            obj.checked = false;
+
+            });
+
+            UpdateAllergy();
+            document.getElementById("AllergyQuantity").innerHTML = "None";
+
+        }
+
+        function clearPreferences() {
+                    $('.preferenceChoice').each(function (index, obj) {
+
+                obj.checked = false;
+
+                });
+        UpdatePreference();
+        document.getElementById("PreferencesQuantity").innerHTML = "None";
+    }
+
+                function Submitting() {
+                    load();
+        var selectedPreferences = "";
+        var selectedAllergies = "";
+        var activityLev;
+          $('.preferenceChoice').each(function (index, obj) {
+            if (this.checked === true)
+              {
+                    selectedPreferences += obj.name + ",";
+
+                }
+                });
+            selectedPreferences = selectedPreferences.slice(0, -1);
+            $('.AllergyChoice').each(function (index, obj) {
+                if (this.checked === true) {
+                        selectedAllergies += obj.name + ",";
+
+                    }
+                    });
+                selectedAllergies = selectedAllergies.slice(0, -1);
+                var boolAllergy = document.getElementById("AllergiesCheck").checked;
+                var boolVeg = document.getElementById("VegCheck").checked;
+
+            $('.ActivityLev').each(function () {
+                    if (this.checked === true) {
+                            activityLev = this.value;
+                        }
+                        });
+
+            $.ajax({
+                    type: "get",
+                url: "/user/submittingAddtional",
+
+                data: {
+                            'Activity_Lev': activityLev,
+                    'Preferences': selectedPreferences,
+                    'IsAllergic': boolAllergy,
+                    'Allergies': selectedAllergies,
+                    'IsVeg': boolVeg
+                },
+                success: function () {
+                    location.reload();
+                    //$("#toggleModal").click();
+
+                    stopLoad();
+                },
+                erroe: function () {
+                    alert("An error has occured. Try again.");
+                }
+
+                    });
+                }
+
+                function disableModal() {
+                    var SelectedAllergies = '@ViewBag.ChoosenAllegies';
+                    if (SelectedAllergies !== "") {
+                        var AllergyArray = SelectedAllergies.split(",");
+                        document.getElementById("AllergyQuantity").innerHTML = AllergyArray.length + "";
+
+                    }
+                    var SelectedPreferences = '@ViewBag.ChoosenPreferences';
+                    if (SelectedPreferences !== "") {
+                        var PreferencesArray = SelectedPreferences.split(",");
+                        document.getElementById("PreferencesQuantity").innerHTML = PreferencesArray.length + "";
+
+                    }
+
+                    var newuser = '@ViewBag.NewUser';
+                    if (newuser === 'True' || newuser === 'true') {
+
+                        var url = '@Url.Action("_NewUserPartial", "User")';
+                        $('#ModalContent').load(url);
+                        load();
+                        $("#toggleModal").click();
+
+                    }
+                    loaded();
+
+                    var timeExceeded = '@ViewBag.TimeExceeded';
+                    if (timeExceeded === 'True' || timeExceeded === 'true') {
+                        document.getElementById("notifCount").innerHTML = "1";
+                        document.getElementById("NotifNum").innerHTML = "1";
+
+                        $("#noMsg").css("display", "none");
+                        $("#NotifMsg").css("display", "block");
+
+
+                        UpdateInfo();
+                    }
+                    else {
+                        document.getElementById("notifCount").innerHTML = "0";
+                        document.getElementById("NotifNum").innerHTML = "0";
+
+                        $("#noMsg").css("display", "block");
+                        $("#NotifMsg").css("display", "none");
+
+                    }
+
+                }
+                function UpdateInfo(){
+                    var urls = '@Url.Action("_UpdateBMI", "User")';
+
+                    $('#ModalContent').load(urls);
+                    load();
+                       $("#toggleModal").click();
+                }
+                function UpdateAllergy() {
+                    load();
+                    var selectedAllergies = "";
+
+                    $('.AllergyChoice').each(function (index, obj) {
+                        if (this.checked === true) {
+                    selectedAllergies += obj.name + ",";
+
+                }
+                });
+                selectedAllergies = selectedAllergies.slice(0, -1);
+                    $.ajax({
+                type: "get",
+                        url: "/User/UpdateAllergies",
+
+                        data: {
+
+                        'Allergies': selectedAllergies
+                        },
+                        success: function () {
+                        stopLoad();
+                        document.getElementById("AlertMsg").innerHTML = "Your list of allergies has been updated";
+                            $("#HeaderAlert").css("display", "block");
+
+
+                    }
+                });
+
+                }
+
+                function UpdatePreference() {
+                    load();
+
+                    var selectedPreferences = "";
+
+                    $('.preferenceChoice').each(function (index, obj) {
+                        if (this.checked === true) {
+                            selectedPreferences += obj.name + ",";
+
+                }
+            });
+            selectedPreferences = selectedPreferences.slice(0, -1);
+                    $.ajax({
+            type: "get",
+                        url: "/User/UpdatePreferences",
+
+                        data: {
+
+                    'Preferences': selectedPreferences
+                        },
+                        success: function () {
+                    stopLoad();
+                    document.getElementById("AlertMsg").innerHTML = "Your list of Preferences has been updated";
+                            $("#HeaderAlert").css("display", "block");
+
+                }
+            });
+
+        }
+
+        function loadPartial() {
+
+            var url = '@Url.Action("_ViewAccountPartialView", "User")';
+            var ids = '@ViewBag.username';
+
+            $('#ModalContent').load(url, {id: ids});
+
+                }
+
+                function loadActivityPartial() {
+                    document.getElementById('ModalContent').innerHTML=" " ;
+
+            var url = '@Url.Action("_ActivityModal", "User")';
+           $('#ModalContent').load(url);
+                        load();
+                        $("#toggleModal").click();
+
+                }
+
+
+function ConsumedModel() {
+
+    document.getElementById('ModalContent').innerHTML = " ";
+
+    var url = '@Url.Action("_AddFoodPartial", "User")';
+    $('#ModalContent').load(url);
+    load();
+    $("#toggleModal").click();
+
+
+}
+    function load() {
+        var spin = document.getElementById("spinner");
+        spin.innerHTML = " <div></div> <div></div> <div></div> <div></div>";
+    }
+    function stopLoad() {
+        var spin = document.getElementById("spinner");
+        spin.innerHTML = "";
+
+    }
+
+
+            </script>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+.AddFood {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: #008CBA; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor:pointer;
+}
+
+#spinner div {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -20px;
+    top: 78px;
+    background-color: #2C3036;
+    border-radius: 50%;
+    -webkit-animation: move 4s infinite cubic-bezier(.2,.64,.81,.23);
+    animation: move 4s infinite cubic-bezier(.2,.64,.81,.23);
+}
+#spinner div:nth-child(2) {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+#spinner div:nth-child(3) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+#spinner div:nth-child(4) {
+  -webkit-animation-delay: 450ms;
+          animation-delay: 450ms;
+}
+@-webkit-keyframes move {
+  0% {left: 0%;}
+  75% {left:100%;}
+  100% {left:100%;}
+}
+@keyframes move {
+  0% {left: 0%;}
+  75% {left:100%;}
+  100% {left:100%;}
+}
+
+
+
+
+#RegisterSpinner div {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -20px;
+    top: 102px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-animation: move 4s infinite cubic-bezier(.2,.64,.81,.23);
+    animation: move 4s infinite cubic-bezier(.2,.64,.81,.23);
+}
+
+#RegisterSpinner div:nth-child(2) {
+    -webkit-animation-delay: 150ms;
+    animation-delay: 150ms;
+}
+
+#RegisterSpinner div:nth-child(3) {
+    -webkit-animation-delay: 300ms;
+    animation-delay: 300ms;
+}
+
+#RegisterSpinner div:nth-child(4) {
+    -webkit-animation-delay: 450ms;
+    animation-delay: 450ms;
+}
+
